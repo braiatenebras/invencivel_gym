@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(21, 119, 211, 0.884);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo {
+    width: 250px;
+    margin-left: 1100px;
+}
+
+.yellow-theme {
+    background-color: yellow !important;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.quadrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+    width: 1200px;
+    height: 500px;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.invincible,
+.invincible-alt {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.invincible-alt {
+    opacity: 0;
+    width: 765px;
+    margin-left: -250px;
+
+}
+
+.yellow-theme .invincible {
+    opacity: 0;
+}
+
+.yellow-theme .invincible-alt {
+    opacity: 1;
+}
+
+.invincible {
+    width: 570px;
+    margin-top: -200px;
+    margin-left: -100px;
+}

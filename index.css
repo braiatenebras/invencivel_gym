@@ -18,18 +18,14 @@ body {
     transition: background 0.5s ease-in-out;
 }
 
-header {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
 .logo { /* Logo invencivel */
-    width: 250px;
-    margin-left: 925px;
+    width: 280px;
+    margin-left: 160px;
+    position: absolute ;
+    margin-top: -100px;
+   max-height: 280px; 
+
 } 
-
-
 .yellow-theme {
     background-color: yellow !important;
 }

@@ -24,10 +24,11 @@ header {
     left: 20px;
 }
 
-.logo {
+.logo { /* Logo invencivel */
     width: 250px;
-    margin-left: 1100px;
-}
+    margin-left: 925px;
+} 
+
 
 .yellow-theme {
     background-color: yellow !important;
@@ -36,6 +37,7 @@ header {
 form {
     width: 100%;
     text-align: center;
+    
 }
 
 input {
@@ -43,8 +45,8 @@ input {
     margin: 10px auto;
     width: 250px;
     height: 30px;
-    background-color: black;
-    color: aliceblue;
+    background-color: white;
+    color: black;
 }
 
 .quadrado {

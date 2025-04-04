@@ -18,14 +18,17 @@ body {
     transition: background 0.5s ease-in-out;
 }
 
-.logo { /* Logo invencivel */
-    width: 280px;
-    margin-left: 160px;
-    position: absolute ;
-    margin-top: -100px;
-   max-height: 280px; 
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
 
-} 
+.logo {
+    width: 250px;
+    margin-left: 1100px;
+}
+
 .yellow-theme {
     background-color: yellow !important;
 }
@@ -33,7 +36,6 @@ body {
 form {
     width: 100%;
     text-align: center;
-    
 }
 
 input {
@@ -41,8 +43,8 @@ input {
     margin: 10px auto;
     width: 250px;
     height: 30px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: aliceblue;
 }
 
 .quadrado {

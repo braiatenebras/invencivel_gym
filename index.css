@@ -43,8 +43,8 @@ input {
     margin: 10px auto;
     width: 250px;
     height: 30px;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .quadrado {
@@ -91,28 +91,33 @@ input {
 }
 
 .invincible {
-    width: 570px;
-    margin-top: -200px;
-    margin-left: -100px;
+    width: 70%;
+    margin-left: -00px;
 }
 
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
 @media (max-width: 1200px) {
-    .quadrado {
-        width: 95%;
+    body {
         height: auto;
-        padding: 20px;
-        flex-direction: column;
-        margin-top: -400px;
+        min-height: 100vh;
+        padding: 30px 0;
+    }
+
+    .quadrado {
+        width: 90%;
+        height: auto;
+        padding: 25px;
+        margin-top: -350px;
     }
 
     .logo {
+        width: 200px;
         margin-left: 0;
         position: static;
-        margin-bottom: 100px;
-        
+        margin-bottom: 400px;
+        margin-top: -150px;
     }
 
     header {
@@ -120,76 +125,132 @@ input {
         top: auto;
         left: auto;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .image-container {
         width: 100%;
-        height: 400px;
-        margin-top: 20px;
+        height: 350px;
+        margin-top: 30px;
     }
 
     .invincible {
-        width: 80%;
+        width: 40%;
         max-width: 400px;
-        margin-top: -100px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: auto;
+        left: 235px;
     }
 
     .invincible-alt {
-        width: 100%;
-        max-width: 600px;
+        width: 90%;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+@media (max-width: 1024px) {
+    .invincible {
+        width: 28%;
+        left: 350px;
+        top: -30px;
+    }
+
+    .invincible-alt {
+        width: 50%;
+        top: -30px;
+    }
+
+    .logo {
+        margin-bottom: 340px;
+        margin-top: -25px;
+    }
+
+    .quadrado {
+        flex-direction: column;
+
+    }
+
 }
 
 @media (max-width: 768px) {
     body {
         height: auto;
-        padding: 20px 0;
+        min-height: 100vh;
+        padding: 25px 0;
+        justify-content: flex-start;
+    }
+
+    .quadrado {
+        width: 95%;
+        margin-top: -300px;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 190px;
+        margin-bottom: 300px;
+
     }
 
     .image-container {
         height: 300px;
+        margin-top: 25px;
     }
 
     .invincible {
-        margin-top: -150px;
-    }
-    .quadrado {
-        margin-top: -260px;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 180px;
-    }
-
-    input {
-        width: 90%;
-    }
-
-    .invincible {
-        width: 90%;
-        margin-top: -110px;
-        margin-left: 6%;
-
+        width: 33%;
+        top: -4px;
+        left: 37%;
     }
 
     .invincible-alt {
-        width: 115%;
-        margin-left: -4%;
+        width: 60%;
+        top: -10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        height: auto;
+        padding: 20px;
+        justify-content: flex-start;
     }
 
     .quadrado {
-        margin-top: -210px;
+        width: 100%;
+        margin-top: -170px;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 180px;
+        margin-bottom: 180px;
+        margin-top: 5px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        margin: 12px auto;
+    }
+
+    .invincible {
+        width: 47%;
+        top: 10px;
+        left: 110px;
+        transform: translateX(0);
+    }
+
+    .invincible-alt {
+        width: 90%;
+        top: 5px;
+        left: 20px;
+        transform: translateX(0);
     }
 }

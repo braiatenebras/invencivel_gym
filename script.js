@@ -20,7 +20,7 @@ function logar() {
     }
 
     alert('Cadastro realizado com sucesso!');
-    location.href = "exemplo.html";
+    location.href = "home.html";
 }
 
 setInterval(() => {

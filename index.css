@@ -55,14 +55,16 @@ input {
 
 .enviar {
     border-radius: 10px;
-    padding: 20px;
     text-align: center;
     background-color: yellow;
+    height: 40px;
+    width: 250px;
+    margin-top: 5px;    
+    
 
 }
 
 .enviar:hover {
-    /* ✅ Também funciona */
     background-color: rgba(21, 119, 211, 0.884);
 }
 

@@ -1,35 +1,39 @@
+
+
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/Omniman_logo.png">
     <link rel="stylesheet" href="home.css">
-    <title>Home</title>
+    <title>Invincible Gym</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="logo">Invencible Gym</div>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Treinos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-            <a href="index.html">Sair</a>
-        </nav>
+        <img src="assets/474920-invincible51-removebg-preview.png" alt="Invincible Logo" class="logo">
     </header>
-    
-    <section class="seila">
-        <h1>Bem-vindo ao Invencible Gym</h1>
-        <p>Treine como um verdadeiro herói! Aqui, você se torna invencível.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Invencible Gym. Todos os direitos reservados.</p>
-    </footer>
 
-    
+    <div class="quadrado">
+        <div class="quadrado-form">
+            <form>
+                <h3>Se Cadastre</h3>
+                <input type="text" placeholder="Nome de Usuário" id="login" required>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <input type="password" placeholder="Senha" id="senha" required>
+                <input type="tel" placeholder="Telefone" id="tel" required>
+                <button onclick="logar(); return false" class="enviar">Criar conta </button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="assets/474920-invincible51-Photoroom.png" class="invincible">
+            <img src="assets/invincible-yellow.png" class="invincible-alt">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

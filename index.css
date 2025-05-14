@@ -2,80 +2,141 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    background-color: black;
-    padding: 10px 0;
+    background-color: #222;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    padding: 20px 5%;
+    color: white;
 }
 
 .logo {
-    color: rgb(255, 221, 0);
-    font-size: 24px;
-    font-weight: bold;
+    color: #FFD700;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-
-nav ul {
+.menu {
     list-style: none;
     display: flex;
+    gap: 30px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav a {
+.menu li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-    color: rgb(255, 221, 0);
+.menu li a:hover {
+    color: #FFD700;
+    transform: translateY(-3px);
 }
 
+/* Menu Mobile */
+#menu-toggle {
+    display: none;
+}
 
-.seila {
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Seção de Boas-vindas */
+.bem-vindo {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    background-color: rgba(21, 119, 211, 0.884);
+    background: linear-gradient(135deg, rgba(21, 119, 211, 0.9), rgba(0, 118, 255, 0.8));
     color: white;
     padding: 20px;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
 }
 
-.seila h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.seila p {
-    font-size: 20px;
+.bem-vindo h1 {
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
+.bem-vindo p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Rodapé */
 footer {
-    background: black;
+    background: #222;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Mobile */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 70px;
+        right: 0;
+        width: 250px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu {
+        height: 350px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu li {
+        padding: 1px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    .menu li a:hover {
+        color: #FFD700;
+    }
 }

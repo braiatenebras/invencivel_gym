@@ -142,6 +142,7 @@ input {
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
+
 @media (max-width: 1200px) {
     body {
         height: auto;
@@ -267,14 +268,17 @@ input {
 
     .quadrado {
         width: 100%;
-        margin-top: -170px;
         padding: 15px;
+        position: relative;
+        top: 30px;
+    
     }
 
     .logo {
         width: 180px;
-        margin-bottom: 180px;
-        margin-top: 5px;
+        position: relative;
+        top: 50px;
+        left: 10px;
     }
 
     input {

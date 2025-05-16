@@ -20,11 +20,11 @@ function logar() {
     }
 
     alert('Cadastro realizado com sucesso!');
-    location.href = "/index.html";
+    location.href = "../index.html";
 }
 
 setInterval(() => {
     document.body.classList.toggle('yellow-theme');
-}, 3000);
+}, 4000);
 
 

@@ -45,12 +45,11 @@ input {
     display: block;
     margin: 10px auto;
     width: 250px;
-    height: 30px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    height: 35px;
+    padding: 10px;
     text-align: center;
-    padding: 15px;
-
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 /* Seta de voltar */
@@ -138,6 +137,41 @@ input {
     width: 70%;
     margin-left: -00px;
 }
+
+.formulario {
+    display: none;
+    animation: fade 0.5s ease;
+}
+
+.formulario.ativo {
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trocar {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.yellow-theme .trocar {
+    color: darkorange;
+}
+
 
 /* RESPONSIVIDADE */
 /* RESPONSIVIDADE */
@@ -271,7 +305,7 @@ input {
         padding: 15px;
         position: relative;
         top: 30px;
-    
+
     }
 
     .logo {

@@ -29,6 +29,7 @@ header {
     left: 930px;
     top: -6px;
     position: relative;
+    z-index: 1;
 }
 
 .yellow-theme {
@@ -101,22 +102,23 @@ input {
     height: 500px;
     padding: 20px;
     flex-direction: row-reverse;
+    z-index: 2;
 }
 
 .image-container {
     position: relative;
     width: 600px;
     height: 600px;
+
 }
 
 .invincible,
 .invincible-alt {
     position: absolute;
-    width: 350px;
-    height: auto;
     top: 0;
     left: 0;
     transition: opacity 0.5s ease-in-out;
+
 }
 
 .invincible-alt {
@@ -231,27 +233,32 @@ input {
 }
 
 @media (max-width: 1024px) {
+    .quadrado {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .invincible {
-        width: 28%;
-        left: 350px;
-        top: -30px;
+        width: 30%;
+        margin: 0 auto;
+        position: relative;
+        left: auto;
+        transform: none;
+        display: block;
     }
 
     .invincible-alt {
         width: 50%;
         top: -30px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .logo {
         margin-bottom: 340px;
         margin-top: -25px;
     }
-
-    .quadrado {
-        flex-direction: column;
-
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -266,36 +273,45 @@ input {
         width: 95%;
         margin-top: -300px;
         padding: 20px;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
     }
 
     .logo {
         width: 190px;
         margin-bottom: 300px;
-
+        z-index: 1;
     }
 
     .image-container {
         height: 300px;
         margin-top: 25px;
+        display: flex;
+        justify-content: center;
     }
 
     .invincible {
         width: 33%;
+        margin: 0 auto;
+        position: relative;
+        left: auto;
         top: -4px;
-        left: 37%;
+        transform: none;
     }
 
     .invincible-alt {
         width: 60%;
         top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
-
 
 @media (max-width: 480px) {
     body {
         min-height: 100vh;
-        height: auto;
+        height: 700px;
         padding: 20px;
         justify-content: flex-start;
     }
@@ -304,14 +320,21 @@ input {
         width: 100%;
         padding: 15px;
         position: relative;
-        top: 30px;
+        top: -10px;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .image-container {
+        height: 210px;
+        display: flex;
+        justify-content: center;
     }
 
     .logo {
         width: 180px;
         position: relative;
-        top: 50px;
+        top: 8px;
         left: 10px;
     }
 
@@ -323,16 +346,21 @@ input {
     }
 
     .invincible {
-        width: 47%;
-        top: 10px;
-        left: 110px;
-        transform: translateX(0);
+        width: 50%;
+        height: 280px;
+        margin: 0 auto;
+        position: relative;
+        top: -15px;
+        left: 20px;
+        transform: none;
+        display: block;
+
     }
 
     .invincible-alt {
         width: 90%;
         top: 5px;
-        left: 20px;
-        transform: translateX(0);
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

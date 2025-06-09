@@ -25,12 +25,12 @@ nav {
 }
 
 .logo {
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
 }
 
 .menu {
@@ -72,7 +72,7 @@ nav {
 }
 
 .menu li a:hover {
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
 }
 
 .menu li a:hover::before {
@@ -103,7 +103,7 @@ nav {
 }
 
 .menu-icon:hover {
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
     transform: scale(1.1);
 }
 
@@ -136,7 +136,7 @@ nav {
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
 }
 
 .bem-vindo p {
@@ -159,7 +159,7 @@ nav {
 .planos h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -188,14 +188,14 @@ nav {
 }
 
 .plano.destaque {
-    border: 2px solid #FFD700;
+    border: 2px solid rgba(21, 119, 211, 0.884);
     position: relative;
 }
 
 .plano h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #FFD700;
+    color: rgba(21, 119, 211, 0.884);
 }
 
 .preco {
@@ -231,14 +231,19 @@ nav {
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background-color: #FFD700;
+    background-color: rgba(21, 119, 211, 0.884);
     border-radius: 50%;
     display: none;
 }
+
+.beneficios li:first-child:before {
+    display: block;
+}
+
 .botao-plano {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #FFD700;
+    background-color: rgba(21, 119, 211, 0.884);
     color: #111;
     text-decoration: none;
     border-radius: 5px;
@@ -288,7 +293,7 @@ nav {
 .cta-button-secondary {
     text-decoration: none;
     color: black;
-    background-color: #FFD700;
+    background-color: rgba(21, 119, 211, 0.884);
     padding: 15px 20px;
     border-radius: 20px;
 }

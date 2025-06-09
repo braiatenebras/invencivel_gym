@@ -235,11 +235,6 @@ nav {
     border-radius: 50%;
     display: none;
 }
-
-.beneficios li:first-child:before {
-    display: block;
-}
-
 .botao-plano {
     display: inline-block;
     padding: 12px 25px;

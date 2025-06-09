@@ -245,7 +245,6 @@ nav {
     background-color: #111;
     color: white;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .planos h2 {
@@ -402,13 +401,12 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    z-index: 1000;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Menu Mobile */
 /* Menu Mobile */
 @media screen and (max-width: 768px) {
     nav {
@@ -425,14 +423,14 @@ footer {
         height: 0;
         overflow: hidden;
         transition: height 0.4s ease;
-        box-shadow: -4px 8px 15px rgba(0, 0, 0, 0.3);
         border-radius: 0 0 0 10px;
         padding: 0;
+        z-index: 1000;
     }
 
     #menu-toggle:checked+.menu-icon+.menu {
         height: calc(100vh - 70px);
-        padding: 20px 0;
+        padding: 20px 0px;
     }
 
     .menu-icon {
@@ -440,7 +438,7 @@ footer {
     }
 
     .menu li {
-        padding: 12px 20px;
+        padding: 5px;
         text-align: center;
         margin: 0;
         opacity: 0;
@@ -455,7 +453,7 @@ footer {
         display: inline-block;
         width: 100%;
         font-size: 18px;
-        padding: 12px 0;
+        padding: 5px 0;
     }
 
     .menu li.highlight a {
@@ -468,7 +466,13 @@ footer {
     }
 
     .theme-toggle {
-        margin-left: 10px;
+        margin-left: 5px;
         font-size: 20px;
+    }
+
+    main,
+    .conteudo,
+    section {
+        padding-top: 90px;
     }
 }

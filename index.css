@@ -147,6 +147,128 @@ nav {
     line-height: 1.6;
 }
 
+/* Seção de Planos */
+.planos {
+    padding: 80px 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.planos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plano {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 370px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.plano.destaque {
+    border: 2px solid #FFD700;
+    position: relative;
+}
+
+.plano h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.preco {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.preco span {
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.beneficios {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.beneficios li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.beneficios li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    display: none;
+}
+
+.beneficios li:first-child:before {
+    display: block;
+}
+
+.botao-plano {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FFD700;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.botao-plano:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .planos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
 
 @keyframes fadeIn {
     from {

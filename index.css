@@ -14,6 +14,81 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Blue Theme Styles */
+.blue-theme .logo {
+    color: rgba(21, 119, 211, 0.884);
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+}
+
+.blue-theme .menu li a:hover {
+    color: white;
+}
+
+.blue-theme .menu-icon:hover {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .bem-vindo h1 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .planos h2 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .plano.destaque {
+    border: 2px solid rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .plano h3 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .beneficios li:before {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .botao-plano {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .cta-button,
+.blue-theme .cta-button-secondary {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .menu li.highlight a {
+    border: 1px solid rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .menu li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+}
+
+
+.blue-theme .theme-toggle {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .theme-toggle:hover {
+    color: white;
+}
+
+.blue-theme .menu li.highlight a:hover {
+    background-color: blue;
+    color: white;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,7 +139,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+    background: yellow;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -72,7 +147,7 @@ nav {
 }
 
 .menu li a:hover {
-    color: #FFD700;
+    color: black;
 }
 
 .menu li a:hover::before {
@@ -85,7 +160,7 @@ nav {
 }
 
 .menu li.highlight a:hover {
-    background-color: rgba(255, 215, 0, 0.3);
+    background-color: rgb(152, 152, 5);
     color: white;
 }
 
@@ -396,55 +471,4 @@ footer {
         margin-left: 10px;
         font-size: 20px;
     }
-}
-
-/* Blue Theme Styles */
-.blue-theme .logo {
-    color: rgba(21, 119, 211, 0.884);
-    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
-}
-
-.blue-theme .menu li a:hover {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .menu-icon:hover {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .bem-vindo h1 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .planos h2 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .plano.destaque {
-    border: 2px solid rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .plano h3 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .beneficios li:before {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .botao-plano {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .cta-button,
-.blue-theme .cta-button-secondary {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .theme-toggle {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .theme-toggle:hover {
-    color: white;
 }

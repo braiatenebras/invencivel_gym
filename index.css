@@ -5,49 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* seção para o tema azul */
-.blue-theme .logo {
-    color: rgba(21, 119, 211, 0.884);
-    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
-}
-
-.blue-theme .menu li a:hover {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .menu-icon:hover {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .bem-vindo h1 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .planos h2 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .plano.destaque {
-    border: 2px solid rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .plano h3 {
-    color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .beneficios li:before {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .botao-plano {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
-.blue-theme .cta-button,
-.blue-theme .cta-button-secondary {
-    background-color: rgba(21, 119, 211, 0.884);
-}
-
 header {
     background-color: #111;
     position: fixed;
@@ -65,23 +22,6 @@ nav {
     color: white;
     max-width: 1400px;
     margin: 0 auto;
-}
-
-/* botão de mudar o tema */
-.theme-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 5px 10px;
-    margin-left: 20px;
-    transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-    color: #FFD700;
-    transform: scale(1.1);
 }
 
 .logo {
@@ -149,6 +89,23 @@ nav {
     color: white;
 }
 
+/* Theme toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
 /* menu mobile */
 #menu-toggle {
     display: none;
@@ -207,7 +164,7 @@ nav {
     line-height: 1.6;
 }
 
-/* seção de planos */
+/* Seção de Planos */
 .planos {
     padding: 80px 20px;
     background-color: #111;
@@ -296,6 +253,10 @@ nav {
     display: none;
 }
 
+.beneficios li:first-child:before {
+    display: block;
+}
+
 .botao-plano {
     display: inline-block;
     padding: 12px 25px;
@@ -312,10 +273,7 @@ nav {
     transform: scale(1.05);
 }
 
-/* RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE */
-/* RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE */
-/* RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE */
-/* RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE */
+/* Responsivo */
 @media screen and (max-width: 768px) {
     .planos-container {
         flex-direction: column;
@@ -327,7 +285,6 @@ nav {
         margin-bottom: 30px;
     }
 }
-
 
 @keyframes fadeIn {
     from {
@@ -355,6 +312,7 @@ nav {
     background-color: #FFD700;
     padding: 15px 20px;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover,
@@ -433,4 +391,60 @@ footer {
     .menu li.highlight a:hover {
         background-color: rgba(255, 215, 0, 0.2);
     }
+
+    .theme-toggle {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+
+/* Blue Theme Styles */
+.blue-theme .logo {
+    color: rgba(21, 119, 211, 0.884);
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+}
+
+.blue-theme .menu li a:hover {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .menu-icon:hover {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .bem-vindo h1 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .planos h2 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .plano.destaque {
+    border: 2px solid rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .plano h3 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .beneficios li:before {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .botao-plano {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .cta-button,
+.blue-theme .cta-button-secondary {
+    background-color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .theme-toggle {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .theme-toggle:hover {
+    color: white;
 }

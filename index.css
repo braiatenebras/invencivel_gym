@@ -470,7 +470,7 @@ footer {
     }
 
     #menu-toggle:checked+.menu-icon+.menu {
-        height: calc(100vh - 70px);
+        height: 400px;
         padding: 20px 0px;
     }
 

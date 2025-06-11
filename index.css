@@ -423,6 +423,57 @@ nav {
     transform: scale(1.05);
 }
 
+
+.contato1 {
+    background-color: #111;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-accounts {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.insta-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insta-account:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.bi {
+    color: white;
+}
+
+.insta-account p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.instagram-accounts a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
 /* footer */
 footer {
     background: #111;
@@ -511,9 +562,5 @@ footer {
         font-size: 20px;
     }
 
-    main,
-    .conteudo,
-    section {
-        padding-top: 90px;
-    }
+
 }

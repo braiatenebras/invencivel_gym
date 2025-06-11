@@ -469,11 +469,6 @@ nav {
 }
 
 
-
-
-
-
-
 /* footer */
 footer {
     background: #111;
@@ -490,6 +485,10 @@ footer {
 @media screen and (max-width: 768px) {
     nav {
         padding: 15px 20px;
+    }
+
+    .conteudo-bv {
+        margin-top: 100px;
     }
 
     .planos-container {

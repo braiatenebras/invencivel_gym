@@ -171,7 +171,7 @@ nav {
 
 .menu li.highlight a:hover {
     background-color: rgb(152, 152, 5);
-    color: white;
+    color: black;
 }
 
 /* Theme toggle button */

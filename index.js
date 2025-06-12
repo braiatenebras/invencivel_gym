@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
-    const logo = document.getElementById('logo'); // Corrigido para 'logo' (que é o ID na sua imagem)
-    const footerLogo = document.querySelector('.rodape .coluna img'); // Para trocar a logo do footer também
+    const logo = document.getElementById('logo'); // para trocar a logo do header
+    const footerLogo = document.querySelector('.rodape .coluna img'); // para trocar a logo do footer
 
-    // Verificar tema salvo ao carregar a página
+    // verificar tema salvo ao carregar a página
     const savedTheme = localStorage.getItem('theme');
-    
+
     if (savedTheme === 'blue') {
         body.classList.add('blue-theme');
         logo.src = "assets/logoazul.png";
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Configurar o botão de tema
-    themeToggle.addEventListener('click', function() {
+    // configurar o botão de tema
+    themeToggle.addEventListener('click', function () {
         body.classList.toggle('blue-theme');
-        
-        // Trocar as logos
+
+        // trocar as logos
         if (body.classList.contains('blue-theme')) {
             logo.src = "assets/logoazul.png";
             if (footerLogo) {

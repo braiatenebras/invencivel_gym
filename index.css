@@ -28,6 +28,7 @@ header {
     color: rgba(21, 119, 211, 0.884);
 }
 
+
 .blue-theme .bem-vindo h1 {
     color: rgba(21, 119, 211, 0.884);
 }
@@ -94,6 +95,13 @@ header {
     color: white;
 }
 
+.blue-theme .coluna h4 {
+    background-color: #111;
+    color: rgba(21, 119, 211, 0.884);
+
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -104,13 +112,10 @@ nav {
     margin: 0 auto;
 }
 
-.logo {
-    color: #FFD700;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+.logo img {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
 }
 
 .menu {
@@ -435,11 +440,17 @@ nav {
     justify-content: center;
 }
 
+.contato1 p {
+    margin-bottom: 30px;
+}
+
 .instagram-accounts {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     width: 300px;
+    margin: 0 auto;
 }
 
 .insta-account {
@@ -447,6 +458,7 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+
 
 .insta-account:hover {
     transform: scale(1.05);
@@ -469,19 +481,83 @@ nav {
 }
 
 
+
 /* footer */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+.rodape {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px 10px;
+    font-size: 0.95rem;
+}
+
+.container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.coluna img {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 30px;
 }
 
 
-/* Menu Mobile */
-/* Menu Mobile */
+.coluna {
+    flex: 1 1 200px;
+}
+
+.coluna h4 {
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna ul li {
+    margin-bottom: 8px;
+}
+
+.coluna ul li a,
+.redes-sociais a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.coluna ul li a:hover,
+.redes-sociais a:hover {
+    color: #fff;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.direitos {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+
+
+/* Menu Mobile e Responsividade */
+/* Menu Mobile e Responsividade */
+/* Menu Mobile e Responsividade */
+/* Menu Mobile e Responsividade */
 @media screen and (max-width: 768px) {
     nav {
         padding: 15px 20px;

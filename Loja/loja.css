@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* Tema Azul */
+.blue-theme h1,
+.blue-theme h2,
+.blue-theme .card-title,
+.blue-theme .price {
+    color: #2196F3;
+}
+
+.blue-theme .btn-primary {
+    background-color: #2196F3;
+    color: white;
+}
+
+.blue-theme .btn-primary:hover {
+    background-color: #fff;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+.blue-theme .menu-icon:hover {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .menu li a:hover {
+    color: white;
+}
+
+.blue-theme .menu li.highlight a {
+    border: 1px solid rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .menu li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    /* Alterado para azul */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.blue-theme .logo {
+    color: rgba(21, 119, 211, 0.884);
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+}
+
+.blue-theme .menu li.highlight a:hover {
+    background-color: blue;
+    /* Alterado para azul */
+    color: white;
+}
+
+.blue-theme .theme-toggle {
+    color: white;
+    border: solid 1px rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .theme-toggle:hover {
+    color: white;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu li a span {
+    position: relative;
+    z-index: 1;
+}
+
+.menu li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    /* Alterado para azul */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.menu li a:hover {
+    color: black;
+    /* Alterado para preto */
+}
+
+.menu li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu li.highlight a {
+    border: 1px solid #FFD700;
+}
+
+.menu li.highlight a:hover {
+    background-color: rgb(152, 152, 5);
+    color: black;
+}
+
+/* Botões e Interações */
+.theme-toggle {
+    background: none;
+    border: solid 1px #FFD700;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Ícone do menu mobile */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Conteúdo Principal */
+main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    color: #FFD700;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+h2 {
+    color: #FFD700;
+    margin: 20px 0;
+}
+
+
+/* Produtos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.product-card {
+    width: 24%;
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.7);
+}
+
+.product-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        background-color: #111;
+        top: 70px;
+        right: 0;
+        width: 250px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        border-radius: 0 0 0 10px;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu {
+        height: 400px;
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu li {
+        padding: 5px;
+        text-align: center;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease 0.2s;
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu li {
+        opacity: 1;
+    }
+
+    .menu li a {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .menu li.highlight a {
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu li.highlight a:hover {
+        background-color: rgba(255, 215, 0, 0.2);
+    }
+
+    .theme-toggle {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+}

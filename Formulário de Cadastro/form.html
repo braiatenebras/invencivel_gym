@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../assets/Omniman_logo.png">
+    <link rel="stylesheet" href="form.css">
+    <title>Invincible Gym</title>
+</head>
+
+<body>
+    <!-- seta de voltar -->
+    <a href="../index.html" class="voltar-link">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <header>
+        <img src="../assets/logoamarelo.png" alt="Invincible Logo" class="logo">
+    </header>
+
+    <div class="quadrado" id="container">
+        <div class="quadrado-form">
+            <!-- Formulário de Cadastro -->
+            <form id="form-cadastro" class="formulario ativo" onsubmit="return cadastrar();">
+                <h3>Se Cadastre</h3>
+                <input type="text" placeholder="Nome de Usuário" id="cad-login" required>
+                <input type="email" placeholder="E-mail" id="cad-email" required>
+                <input type="password" placeholder="Senha" id="cad-senha" required>
+                <input type="tel" placeholder="Telefone" id="cad-tel" required>
+                <button type="submit" class="enviar">Criar conta</button>
+                <p>Já possui conta? <button type="button" class="trocar" onclick="mostrarLogin()">Entrar</button></p>
+            </form>
+
+            <!-- Formulário de Login -->
+            <form id="form-login" class="formulario" onsubmit="return logar();">
+                <h3>Entrar</h3>
+                <input type="text" placeholder="Nome de Usuário ou Email" id="login-email" required>
+                <input type="password" placeholder="Senha" id="login-senha" required>
+                <button type="submit" class="enviar">Entrar</button>
+                <p>Não possui conta? <button type="button" class="trocar" onclick="mostrarCadastro()">Cadastrar</button>
+                </p>
+            </form>
+
+        </div>
+
+        <div class="image-container">
+            <img src="../assets/invencivel-azul.png" class="invincible"> <!-- invencivel azul -->
+            <img src="../assets/invencivel-amarelo.png" class="invincible-alt"> <!-- invencivel amarelo -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

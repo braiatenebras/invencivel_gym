@@ -1,3 +1,6 @@
+/* ===========================
+   RESET E CONFIGURAÇÃO GLOBAL
+   =========================== */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ===========================
+   HEADER
+   =========================== */
 header {
     background-color: #111;
     position: fixed;
@@ -14,7 +20,9 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Blue Theme Styles */
+/* ===========================
+   TEMA AZUL
+   =========================== */
 .blue-theme .logo {
     color: rgba(21, 119, 211, 0.884);
     text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
@@ -27,7 +35,6 @@ header {
 .blue-theme .menu-icon:hover {
     color: rgba(21, 119, 211, 0.884);
 }
-
 
 .blue-theme .bem-vindo h1 {
     color: rgba(21, 119, 211, 0.884);
@@ -80,7 +87,6 @@ header {
     border-radius: 4px;
 }
 
-
 .blue-theme .theme-toggle {
     color: white;
     border: solid 1px rgba(21, 119, 211, 0.884);
@@ -98,10 +104,34 @@ header {
 .blue-theme .coluna h4 {
     background-color: #111;
     color: rgba(21, 119, 211, 0.884);
-
 }
 
+.blue-theme .produtos-container .loja h3 {
+    color: rgba(21, 119, 211, 0.884);
+}
 
+.blue-theme .produtos-container .loja.destaque {
+    border: 2px solid rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .conteudo-loja h2 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
+.blue-theme .botao-loja {
+    background-color: rgba(21, 119, 211, 0.884);
+    color: white;
+}
+
+.blue-theme .botao-loja:hover {
+    background-color: white;
+    color: #111;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   NAVEGAÇÃO E MENU
+   =========================== */
 nav {
     display: flex;
     justify-content: space-between;
@@ -174,7 +204,9 @@ nav {
     color: black;
 }
 
-/* Theme toggle button */
+/* ===========================
+   BOTÃO DE TROCA DE TEMA
+   =========================== */
 .theme-toggle {
     background: none;
     border: solid 1px #FFD700;
@@ -192,7 +224,9 @@ nav {
     transform: scale(1.1);
 }
 
-/* menu mobile */
+/* ===========================
+   MENU MOBILE
+   =========================== */
 #menu-toggle {
     display: none;
 }
@@ -210,7 +244,9 @@ nav {
     transform: scale(1.1);
 }
 
-/* boas vindas */
+/* ===========================
+   SEÇÃO BOAS-VINDAS 
+   =========================== */
 .bem-vindo {
     height: 100vh;
     display: flex;
@@ -250,7 +286,32 @@ nav {
     line-height: 1.6;
 }
 
-/* seção de sobre nós */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta-button,
+.cta-button-secondary {
+    text-decoration: none;
+    color: black;
+    background-color: #FFD700;
+    padding: 15px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button-secondary:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   SEÇÃO SOBRE NÓS
+   =========================== */
 .sobre {
     background-color: #111;
     padding: 60px 20px;
@@ -266,7 +327,6 @@ nav {
     justify-content: space-between;
     gap: 80px;
     flex-wrap: wrap;
-    /* para arrumar automatico pra celular (responsivo) */
     text-align: center;
 }
 
@@ -300,8 +360,9 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-
-/* seção de planos */
+/* ===========================
+   SEÇÃO PLANOS
+   =========================== */
 .planos {
     padding: 80px 20px;
     background-color: #111;
@@ -376,7 +437,6 @@ nav {
     padding-left: 25px;
 }
 
-
 .botao-plano {
     display: inline-block;
     padding: 12px 25px;
@@ -405,30 +465,97 @@ nav {
     }
 }
 
-.cta-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+/* ===========================
+   SEÇÃO LOJA
+   =========================== */
+.loja {
+    padding: 80px 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
 }
 
-.cta-button,
-.cta-button-secondary {
-    text-decoration: none;
-    color: black;
+.conteudo-loja h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudo-loja p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos-container .loja {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.produtos-container .loja:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.produtos-container .loja img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.produtos-container .loja h3 {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.produtos-container .loja p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.botao-loja {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #FFD700;
-    padding: 15px 20px;
-    border-radius: 20px;
+    color: #111;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
-.cta-button:hover,
-.cta-button-secondary:hover {
+.botao-loja:hover {
     background-color: white;
     transform: scale(1.05);
 }
 
+.produtos-container .loja.destaque {
+    border: 2px solid #FFD700;
+    position: relative;
+}
 
+/* ===========================
+   SEÇÃO CONTATOS
+   =========================== */
 .contato1 {
     background-color: #111;
     padding: 20px 20px;
@@ -459,7 +586,6 @@ nav {
     align-items: center;
 }
 
-
 .insta-account:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -480,9 +606,9 @@ nav {
     font-weight: bold;
 }
 
-
-
-/* footer */
+/* ===========================
+   FOOTER / RODAPÉ
+   =========================== */
 .rodape {
     background-color: #111;
     color: #fff;
@@ -505,7 +631,6 @@ nav {
     object-fit: contain;
     margin-bottom: 30px;
 }
-
 
 .coluna {
     flex: 1 1 200px;
@@ -552,12 +677,9 @@ nav {
     color: #aaa;
 }
 
-
-
-/* Menu Mobile e Responsividade */
-/* Menu Mobile e Responsividade */
-/* Menu Mobile e Responsividade */
-/* Menu Mobile e Responsividade */
+/* ===========================
+   RESPONSIVIDADE E MENU MOBILE
+   =========================== */
 @media screen and (max-width: 768px) {
     nav {
         padding: 15px 20px;
@@ -573,12 +695,10 @@ nav {
         gap: 5px;
     }
 
-
     .plano {
         width: 90%;
         margin-bottom: 30px;
     }
-
 
     .menu {
         flex-direction: column;
@@ -636,6 +756,4 @@ nav {
         margin-left: 5px;
         font-size: 20px;
     }
-
-
 }

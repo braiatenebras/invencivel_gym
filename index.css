@@ -129,6 +129,10 @@ header {
     transform: scale(1.05);
 }
 
+.blue-theme .contato1 h2 {
+    color: rgba(21, 119, 211, 0.884);
+}
+
 /* ===========================
    NAVEGAÇÃO E MENU
    =========================== */
@@ -565,6 +569,10 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.contato1 h2 {
+    color: #FFD700;
 }
 
 .contato1 p {

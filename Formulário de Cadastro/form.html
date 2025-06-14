@@ -13,7 +13,7 @@
 
 <body>
     <!-- seta de voltar -->
-    <a href="../index.html" class="voltar-link">
+    <a class="voltar-link" onclick="history.back()">
         <i class="fas fa-arrow-left"></i>
     </a>
 
@@ -52,7 +52,27 @@
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB3QOw_Nd00u4Ru3UKoYKgqqH3uB2GAsck",
+            authDomain: "invencivelgym.firebaseapp.com",
+            projectId: "invencivelgym",
+            storageBucket: "invencivelgym.firebasestorage.app",
+            messagingSenderId: "280831259693",
+            appId: "1:280831259693:web:66f73116bcbea9837a74a4"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src="script.js"></script>
+
+
+
+
 </body>
 
 </html>

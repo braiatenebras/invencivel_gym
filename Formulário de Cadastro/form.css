@@ -69,11 +69,11 @@ input {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .voltar-link:hover {
     background: white;
-    transform: translateX(-3px);
 }
 
 .enviar {

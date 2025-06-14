@@ -56,14 +56,20 @@ body {
     border-radius: 4px;
 }
 
-.blue-theme .logo {
+.blue-theme .blue-theme .logo {
     color: rgba(21, 119, 211, 0.884);
     text-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
 }
 
+.blue-theme .seta-voltar:hover {
+    color: black;
+    background-color: rgba(21, 119, 211, 0.884);
+    /* Alterado para azul */
+}
+
+
 .blue-theme .menu li.highlight a:hover {
     background-color: blue;
-    /* Alterado para azul */
     color: white;
 }
 
@@ -159,6 +165,27 @@ nav {
     background-color: rgb(152, 152, 5);
     color: black;
 }
+
+.seta-voltar {
+    font-size: 24px;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+
+}
+
+.seta-voltar:hover {
+    color: black;
+    background-color: yellow;
+
+
+}
+
 
 /* Botões e Interações */
 .theme-toggle {

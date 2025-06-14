@@ -27,7 +27,8 @@
                 <li><a href="#planos"><span>Planos</span></a></li>
                 <li><a href="#contato"><span>Contato</span></a></li>
                 <li><a href="Produtos/loja.html"><span>Loja</span></a></li>
-                <li class="highlight"><a href="Formulário de Cadastro/form.html"><span>Cadastro</span></a></li>
+                <li class="highlight"><a href="Formulário de Cadastro/form.html"
+                        id="auth-link"><span>Cadastro</span></a></li>
             </ul>
             <button id="theme-toggle" class="theme-toggle">Tema</button>
         </nav>
@@ -238,11 +239,88 @@
         </div>
     </footer>
 
-    <!-- import dos scripts -->
-    <script src="index.js"></script>
+    <!-- Adicione este container de toasts antes de fechar o body -->
+    <div id="toastContainer" class="position-fixed bottom-0 end-0 p-3" style="z-index: 11"></div>
+
+    <!-- Modais -->
+    <!-- Modal de Acesso Negado -->
+    <div class="modal fade" id="accessDeniedModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Vai com calma!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Você precisa fazer login para acessar a página.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="redirectToLogin()">Entrar ou Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Logout -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title">Sair do Sistema</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja sair?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" onclick="confirmLogout()">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Bem-vindo -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Bem-vindo!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Login realizado com sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+    <!-- Configuração do Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB3QOw_Nd00u4Ru3UKoYKgqqH3uB2GAsck",
+            authDomain: "invencivelgym.firebaseapp.com",
+            projectId: "invencivelgym",
+            storageBucket: "invencivelgym.firebasestorage.app",
+            messagingSenderId: "280831259693",
+            appId: "1:280831259693:web:66f73116bcbea9837a74a4"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Seu JavaScript principal -->
+    <script src="index.js"></script>
 </body>
 
 </html>

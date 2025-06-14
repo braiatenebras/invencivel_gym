@@ -1,13 +1,16 @@
 // Funções auxiliares
 function redirectToLogin() {
-    window.location.href = "Formulário de Cadastro/form.html";
+    // Adiciona timestamp para evitar cache
+    window.location.href = "Formulário de Cadastro/form.html?t=" + Date.now();
 }
 
 function confirmLogout() {
     firebase.auth().signOut().then(() => {
         showToast('Você foi desconectado com sucesso!', 'success');
+        // Limpa o histórico de navegação
+        window.history.replaceState(null, null, window.location.href);
         setTimeout(() => {
-            window.location.href = "Formulário de Cadastro/form.html";
+            redirectToLogin();
         }, 1500);
     });
 }
@@ -24,10 +27,9 @@ function showToast(message, type = 'info') {
 
     toastEl.innerHTML = `
         <div class="d-flex">
-            <div class="toast-body">
-                ${message}
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            <div class="toast-body">${message}</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" 
+                    data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
     `;
 
@@ -35,53 +37,45 @@ function showToast(message, type = 'info') {
     const toast = new bootstrap.Toast(toastEl);
     toast.show();
 
-    // Remove o toast após desaparecer
-    toastEl.addEventListener('hidden.bs.toast', function() {
-        toastEl.remove();
-    });
+    toastEl.addEventListener('hidden.bs.toast', () => toastEl.remove());
 }
 
-// Verificação de autenticação
-document.addEventListener('DOMContentLoaded', function() {
-    firebase.auth().onAuthStateChanged(function(user) {
+// Verificação robusta de autenticação
+function checkAuthState() {
+    firebase.auth().onAuthStateChanged(user => {
         const accessDeniedModal = new bootstrap.Modal(document.getElementById('accessDeniedModal'));
-        const welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
 
         if (!user) {
-            // Mostra modal de acesso negado
+            // Força recarregamento se detectar navegação via botão voltar
+            if (performance.navigation.type === 2 || window.performance.getEntriesByType("navigation")[0].type === "back_forward") {
+                window.location.reload(true);
+            }
             accessDeniedModal.show();
         } else {
-            // Mostra mensagem de boas-vindas apenas se acabou de logar
-            if (sessionStorage.getItem('justLoggedIn')) {
-                welcomeModal.show();
-                sessionStorage.removeItem('justLoggedIn');
-            }
             initPage(user);
         }
     });
-});
+}
 
+// Configuração da página para usuário logado
 function initPage(user) {
-    // Configura o botão de login/logout
+    // Transforma o botão Cadastro em Sair
     const authLink = document.getElementById('auth-link');
-
     if (authLink) {
         authLink.innerHTML = '<span>Sair</span>';
         authLink.href = '#';
-        authLink.onclick = function(e) {
+        authLink.onclick = (e) => {
             e.preventDefault();
-            const logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
-            logoutModal.show();
+            new bootstrap.Modal(document.getElementById('logoutModal')).show();
         };
     }
 
-    // Configuração do tema
+    // Configuração do tema (mantido do seu código original)
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const logo = document.getElementById('logo');
     const footerLogo = document.querySelector('.rodape .coluna img');
 
-    // Verificar tema salvo
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'blue') {
         body.classList.add('blue-theme');
@@ -89,8 +83,7 @@ function initPage(user) {
         if (footerLogo) footerLogo.src = "assets/logoazul.png";
     }
 
-    // Configurar botão de tema
-    themeToggle.addEventListener('click', function() {
+    themeToggle.addEventListener('click', () => {
         body.classList.toggle('blue-theme');
         if (body.classList.contains('blue-theme')) {
             logo.src = "assets/logoazul.png";
@@ -103,3 +96,23 @@ function initPage(user) {
         }
     });
 }
+
+// Eventos para lidar com carregamento da página
+document.addEventListener('DOMContentLoaded', () => {
+    checkAuthState();
+
+    // Mostrar modal de boas-vindas se acabou de logar
+    if (sessionStorage.getItem('justLoggedIn')) {
+        new bootstrap.Modal(document.getElementById('welcomeModal')).show();
+        sessionStorage.removeItem('justLoggedIn');
+        // Limpa o estado de navegação
+        window.history.replaceState(null, null, window.location.href);
+    }
+});
+
+// Detecta quando a página é carregada do cache (back/forward)
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        checkAuthState();
+    }
+});

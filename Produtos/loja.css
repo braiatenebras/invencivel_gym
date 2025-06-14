@@ -37,9 +37,6 @@ body {
     color: white;
 }
 
-.blue-theme .menu li.highlight a {
-    border: 1px solid rgba(21, 119, 211, 0.884);
-}
 
 .blue-theme .menu li a::before {
     content: '';
@@ -67,11 +64,6 @@ body {
     /* Alterado para azul */
 }
 
-
-.blue-theme .menu li.highlight a:hover {
-    background-color: blue;
-    color: white;
-}
 
 .blue-theme .theme-toggle {
     color: white;
@@ -157,14 +149,6 @@ nav {
     transform-origin: left;
 }
 
-.menu li.highlight a {
-    border: 1px solid #FFD700;
-}
-
-.menu li.highlight a:hover {
-    background-color: rgb(152, 152, 5);
-    color: black;
-}
 
 .seta-voltar {
     font-size: 24px;
@@ -367,15 +351,6 @@ h2 {
         width: 100%;
         font-size: 18px;
         padding: 5px 0;
-    }
-
-    .menu li.highlight a {
-        background-color: transparent;
-        border: none;
-    }
-
-    .menu li.highlight a:hover {
-        background-color: rgba(255, 215, 0, 0.2);
     }
 
     .theme-toggle {

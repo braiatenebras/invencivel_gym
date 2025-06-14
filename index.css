@@ -726,7 +726,7 @@ nav {
     }
 
     #menu-toggle:checked+.menu-icon+.menu {
-        height: 400px;
+        height: 490px;
         padding: 20px 0px;
     }
 

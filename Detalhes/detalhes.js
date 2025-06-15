@@ -1,3 +1,5 @@
+/* JS PADRÃO PARA OS DETALHES DOS PRODUTOS */
+
 document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;

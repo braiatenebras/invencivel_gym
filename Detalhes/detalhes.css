@@ -1,4 +1,4 @@
-/* Reset e fontes */
+/* CSS PADRÃO PARA OS DETALHES DOS PRODUTOS */
 * {
     margin: 0;
     padding: 0;
@@ -282,7 +282,7 @@ header {
 .imagem-produto img {
     max-width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: contain;
     border-radius: 5px;
 }

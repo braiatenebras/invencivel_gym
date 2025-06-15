@@ -62,6 +62,11 @@ body {
     background: #155ab8;
 }
 
+.blue-theme .produto-card h3,
+.blue-theme .produto-card p {
+    color: rgba(21, 119, 211, 0.884);
+}
+
 .blue-theme .menu li a:hover {
     color: white;
 }

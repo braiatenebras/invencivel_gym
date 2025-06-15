@@ -343,12 +343,16 @@ h2 {
     }
 
     .product-container {
-        flex-direction: column;
-        align-items: center;
+        padding: 0 10px;
     }
 
     .product-card {
-        width: 90%;
+        width: calc(50% - 10px);
+
+    }
+
+    .product-card img {
+        height: 220px;
     }
 
     .menu {
@@ -397,5 +401,11 @@ h2 {
     .theme-toggle {
         margin-left: 5px;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: calc(50% - 5px);
     }
 }

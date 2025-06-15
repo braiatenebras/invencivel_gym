@@ -271,6 +271,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 5%;
+    gap: 10px;
 }
 
 .product-card {

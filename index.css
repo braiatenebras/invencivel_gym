@@ -89,11 +89,12 @@ header {
 
 .blue-theme .theme-toggle {
     color: white;
-    border: solid 1px rgba(21, 119, 211, 0.884);
+
 }
 
 .blue-theme .theme-toggle:hover {
     color: white;
+    background-color: rgba(21, 119, 211, 0.884);
 }
 
 .blue-theme .menu li.highlight a:hover {
@@ -213,19 +214,22 @@ nav {
    =========================== */
 .theme-toggle {
     background: none;
-    border: solid 1px #FFD700;
+    border: none;
     color: white;
     font-size: 20px;
     cursor: pointer;
-    padding: 5px 10px;
-    margin-left: 20px;
-    border-radius: 8px;
     transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .theme-toggle:hover {
     color: #FFD700;
-    transform: scale(1.1);
+    background-color: rgba(255, 215, 0, 0.1);
 }
 
 /* ===========================

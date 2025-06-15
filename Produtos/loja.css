@@ -86,6 +86,11 @@ body {
     color: #111;
 }
 
+.blue-theme .sub-navbar li a {
+    color: #2196F3;
+}
+
+
 /* Header e Navegação */
 header {
     background-color: #111;
@@ -247,6 +252,37 @@ nav {
     transform: scale(1.1);
 }
 
+/* Estilos para a sub-navbar */
+.sub-navbar {
+    background-color: #111;
+    padding: 20px 5%;
+
+}
+
+.sub-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sub-navbar li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.sub-navbar li a:hover,
+.sub-navbar li a.active {
+    background-color: #FFD700;
+    color: #111;
+}
+
+
+
 /* Conteúdo Principal */
 main {
     padding-top: 100px;
@@ -257,12 +293,15 @@ h1 {
     color: #FFD700;
     font-weight: 700;
     margin: 40px 0;
+    margin-top: 100px;
 }
 
 h2 {
     color: #FFD700;
-    margin: 20px 0;
+    margin: 25px 0;
+
 }
+
 
 
 /* Produtos */
@@ -340,6 +379,10 @@ h2 {
 @media screen and (max-width: 768px) {
     nav {
         padding: 15px 20px;
+    }
+
+    h1 {
+        margin-top: 120px;
     }
 
     .product-container {

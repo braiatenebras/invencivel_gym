@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Carrinho de compras
     const cartCounter = document.querySelector('.carrinho-contador');
-    const cartButton = document.querySelector('.carrinho');
     const addToCartBtn = document.querySelector('.btn-comprar');
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];

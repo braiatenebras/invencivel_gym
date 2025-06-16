@@ -1,20 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // ========== GERENCIAMENTO DO TEMA ==========
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
-    const logo = document.getElementById('logo'); // para trocar a logo do header
+    const logo = document.getElementById('logo');
 
-    // Função para trocar a logo
     function updateLogo(theme) {
         if (theme === 'blue') {
-            logo.src = "../assets/logoazul.png"; // Logo azul
+            logo.src = "../assets/logoazul.png";
         } else {
-            logo.src = "../assets/logoamarelo.png"; // Logo padrão
+            logo.src = "../assets/logoamarelo.png";
         }
     }
 
-    // verificar tema salvo ao carregar a página
     const savedTheme = localStorage.getItem('theme');
-
     if (savedTheme === 'blue') {
         body.classList.add('blue-theme');
         updateLogo('blue');
@@ -23,11 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         updateLogo('default');
     }
 
-    // configurar o botão de tema
     themeToggle.addEventListener('click', function () {
         body.classList.toggle('blue-theme');
-
-        // Trocar a logo com base no tema
         if (body.classList.contains('blue-theme')) {
             updateLogo('blue');
             localStorage.setItem('theme', 'blue');
@@ -35,5 +30,25 @@ document.addEventListener('DOMContentLoaded', function () {
             updateLogo('default');
             localStorage.setItem('theme', 'default');
         }
+    });
+
+    // ========== CONTADOR DO CARRINHO ==========
+    const cartCounter = document.querySelector('.carrinho-contador');
+
+    // Atualiza o contador baseado no localStorage
+    function updateCartCounter() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+        if (cartCounter) {
+            cartCounter.textContent = totalItems;
+        }
+    }
+
+    // Atualiza ao carregar a página
+    updateCartCounter();
+
+    // Atualiza quando o storage muda 
+    window.addEventListener('storage', function () {
+        updateCartCounter();
     });
 });

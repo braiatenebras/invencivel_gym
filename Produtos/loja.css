@@ -29,6 +29,16 @@ body {
     border: 1px solid #2196F3;
 }
 
+.blue-theme .sub-navbar li a:hover {
+    background-color: #2196F3;
+    color: #111;
+}
+
+.blue-theme .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #2196F3;
+}
+
 .blue-theme .menu-icon:hover {
     color: rgba(21, 119, 211, 0.884);
 }
@@ -36,7 +46,6 @@ body {
 .blue-theme .menu li a:hover {
     color: white;
 }
-
 
 .blue-theme .menu li a::before {
     content: '';

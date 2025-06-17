@@ -1,4 +1,5 @@
 /* CSS PADRÃO PARA OS DETALHES DOS PRODUTOS */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +43,7 @@ body {
 .blue-theme .estrelas {
     color: rgba(21, 119, 211, 0.884);
 }
+
 
 .blue-theme .btn-comprar {
     background-color: rgba(21, 119, 211, 0.884);

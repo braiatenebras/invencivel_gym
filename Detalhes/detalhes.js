@@ -195,6 +195,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function addToCart(product) {
         const existingItem = cart.find(item => item.id === product.id);
+        const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+
+        // limite de 10 no carrinho
+        if (totalItems + product.quantity > 10) {
+            alert('O máximo de itens no carrinho é 10, remova ou finalize sua compra!');
+            return;
+        }
 
         if (existingItem) {
             existingItem.quantity += product.quantity;

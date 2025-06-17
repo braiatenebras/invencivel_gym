@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Finalizar compra
     finalizarCompraBtn.addEventListener('click', function () {
         if (cart.length > 0) {
-            alert('Compra finalizada com sucesso! Obrigado por sua compra.');
+            alert('Compra finalizada com sucesso! Obrigado por usar/testar nosso site!');
             cart = [];
             localStorage.removeItem('cart');
             renderCartItems();

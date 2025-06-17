@@ -50,6 +50,3 @@ Sinta-se livre para **usar**, **modificar** e **compartilhar** conforme desejar,
 
 ## Obrigado!
 
-
-
-

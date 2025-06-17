@@ -693,7 +693,7 @@
         {
             "id": 24,
             "nome": "Mochila Esportiva",
-            "descricao": "Mochila hidratante 20L com bolso térmico, compartimento para notebook e sistema organizador. Alças acolchoadas para maior conforto.",
+            "descricao": "Mochila esportiva com compartimentos organizados, bolsos ajustáveis e alças ergonômicas para corrida. Material resistente à água e conforto no transporte.",
             "preco": "R$ 159,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -703,20 +703,20 @@
             "avaliacao": 4,
             "beneficios": [
                 "Compartimentos organizados",
-                "Conforto no transporte",
-                "Material resistente à água",
-                "Alça ajustável"
+                "Bolsos ajustáveis",
+                "Alças ergonômicas",
+                "Material resistente à água"
             ],
             "relacionados": [
                 {
-                    "nome": "Corda - Acessório para Treino Funcional",
-                    "preco": 79.90,
-                    "link": "detalhes.html?id=14"
+                    "nome": "Kit Calça e Camisa Térmica de Treino",
+                    "preco": 120.90,
+                    "link": "detalhes.html?id=18"
                 },
                 {
-                    "nome": "Coqueteleira - 600 ML",
-                    "preco": 11.90,
-                    "link": "detalhes.html?id=13"
+                    "nome": "Jaqueta Corta-Vento",
+                    "preco": 129.90,
+                    "link": "detalhes.html?id=20"
                 }
             ]
         },

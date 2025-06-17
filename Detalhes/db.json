@@ -44,10 +44,10 @@
             "avaliacao": 4.5,
             "frete_gratis": null,
             "beneficios": [
-                "Aumento de força e resistência",
-                "Melhora no desempenho atlético",
-                "Acelera a recuperação muscular",
-                "Produto 100% puro"
+                "Fonte de proteína de alta qualidade",
+                "Auxilia no ganho de massa muscular",
+                "Fácil absorção pelo organismo",
+                "Disponível em vários sabores"
             ],
             "relacionados": [
                 {
@@ -70,11 +70,16 @@
             "preco_original": null,
             "categoria": "Suplementos",
             "imagem": "/Produtos/assets/hipercalorico.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 35,
+            "avaliacoes": 28,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Alto teor calórico para ganho de peso",
+                "Combinação de carboidratos e proteínas",
+                "Fácil preparo e consumo",
+                "Enriquecido com vitaminas e minerais"
+            ],
             "relacionados": [
                 {
                     "nome": "Creatina",
@@ -127,11 +132,16 @@
             "preco_original": null,
             "categoria": "Suplementos",
             "imagem": "/Produtos/assets/pre-treino.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 210,
+            "avaliacoes": 156,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Aumenta a energia para treinos intensos",
+                "Melhora o foco e concentração",
+                "Reduz a fadiga muscular",
+                "Potencializa o desempenho"
+            ],
             "relacionados": [
                 {
                     "nome": "Creatina",
@@ -153,11 +163,16 @@
             "preco_original": null,
             "categoria": "Suplementos",
             "imagem": "/Produtos/assets/glutamina.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 75,
+            "avaliacoes": 42,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Recuperação muscular acelerada",
+                "Fortalecimento do sistema imunológico",
+                "Redução do catabolismo muscular",
+                "Melhora na saúde intestinal"
+            ],
             "relacionados": [
                 {
                     "nome": "Creatina",
@@ -179,11 +194,16 @@
             "preco_original": null,
             "categoria": "Suplementos",
             "imagem": "/Produtos/assets/multivitaminico.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
-            "frete_gratis": null,
-            "beneficios": null,
+            "vendidos": 320,
+            "avaliacoes": 245,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Fornece vitaminas e minerais essenciais",
+                "Apoia o sistema imunológico",
+                "Melhora a energia e disposição",
+                "Promove saúde geral"
+            ],
             "relacionados": [
                 {
                     "nome": "Creatina",
@@ -205,11 +225,16 @@
             "preco_original": null,
             "categoria": "Suplementos",
             "imagem": "/Produtos/assets/termogenico.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 180,
+            "avaliacoes": 132,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Acelera o metabolismo",
+                "Aumenta a queima de gordura",
+                "Fornece energia para treinos",
+                "Reduz a fadiga"
+            ],
             "relacionados": [
                 {
                     "nome": "Creatina",
@@ -231,11 +256,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/strap.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 65,
+            "avaliacoes": 38,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Aumenta a aderência em exercícios de puxada",
+                "Protege as mãos de calos e lesões",
+                "Permite cargas mais pesadas com segurança",
+                "Material durável e confortável"
+            ],
             "relacionados": [
                 {
                     "nome": "Luva de Treino",
@@ -257,11 +287,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/luva-treino.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 120,
+            "avaliacoes": 87,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Proteção contra calos e bolhas",
+                "Melhor aderência durante os exercícios",
+                "Conforto e ventilação",
+                "Material resistente e durável"
+            ],
             "relacionados": [
                 {
                     "nome": "Strap",
@@ -283,11 +318,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/cinto-levantamento.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
-            "frete_gratis": null,
-            "beneficios": null,
+            "vendidos": 95,
+            "avaliacoes": 72,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Proteção para a coluna lombar",
+                "Permite levantar cargas mais pesadas com segurança",
+                "Ajuste personalizado para melhor suporte",
+                "Material resistente e durável"
+            ],
             "relacionados": [
                 {
                     "nome": "Luva de Treino",
@@ -309,11 +349,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/faixa-elastica.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 210,
+            "avaliacoes": 156,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Versátil para diversos exercícios",
+                "Auxilia no ganho de mobilidade",
+                "Resistência progressiva",
+                "Ideal para treinos em casa ou academia"
+            ],
             "relacionados": [
                 {
                     "nome": "Coqueteleira - 600 ML",
@@ -335,11 +380,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/coqueteleira.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
-            "frete_gratis": null,
-            "beneficios": null,
+            "vendidos": 430,
+            "avaliacoes": 320,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Mistura suplementos de forma homogênea",
+                "Fácil de transportar e lavar",
+                "Tampa anti-vazamento",
+                "Material resistente e livre de BPA"
+            ],
             "relacionados": [
                 {
                     "nome": "Faixa Elástica",
@@ -361,11 +411,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/corda-naval.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 85,
+            "avaliacoes": 62,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Melhora a resistência e força muscular",
+                "Treino cardiovascular eficiente",
+                "Material durável e resistente",
+                "Versátil para diversos exercícios"
+            ],
             "relacionados": [
                 {
                     "nome": "Coqueteleira - 600 ML",
@@ -387,11 +442,16 @@
             "preco_original": null,
             "categoria": "Acessórios",
             "imagem": "/Produtos/assets/knee-sleeve.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 110,
+            "avaliacoes": 89,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Proteção para articulações dos joelhos",
+                "Suporte durante exercícios pesados",
+                "Melhora a propriocepção",
+                "Material termorregulador"
+            ],
             "relacionados": [
                 {
                     "nome": "Camiseta Dry Fit",
@@ -407,17 +467,22 @@
         },
         {
             "id": 16,
-            "nome": "Camiseta Dry Fit",
+            "nome": "Bandagem de Punho",
             "descricao": "Tecido tecnológico que absorve o suor durante os treinos.",
-            "preco": "R$ 59,90",
+            "preco": "R$ 45,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
-            "imagem": "/Produtos/assets/dryfit.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "imagem": "/Produtos/assets/bandagem-punho.png",
+            "vendidos": 75,
+            "avaliacoes": 52,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Proteção para os punhos em exercícios pesados",
+                "Aumenta a estabilidade articular",
+                "Material elástico e confortável",
+                "Ajuste personalizado"
+            ],
             "relacionados": [
                 {
                     "nome": "Knee Sleeve",
@@ -433,17 +498,53 @@
         },
         {
             "id": 17,
+            "nome": "Camiseta Dry Fit",
+            "descricao": "Tecido tecnológico que absorve o suor durante os treinos.",
+            "preco": "R$ 59,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/dryfit.png",
+            "vendidos": 230,
+            "avaliacoes": 187,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Tecido que absorve o suor rapidamente",
+                "Conforto e liberdade de movimento",
+                "Secagem rápida",
+                "Proteção UV"
+            ],
+            "relacionados": [
+                {
+                    "nome": "Knee Sleeve",
+                    "preco": 69.90,
+                    "link": "detalhes.html?id=15"
+                },
+                {
+                    "nome": "Short de Compressão",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=18"
+                }
+            ]
+        },
+        {
+            "id": 18,
             "nome": "Short de Compressão",
             "descricao": "Melhora a circulação e oferece suporte muscular.",
             "preco": "R$ 79,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/shorts.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 145,
+            "avaliacoes": 112,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Melhora a circulação sanguínea",
+                "Reduz a fadiga muscular",
+                "Conforto durante os treinos",
+                "Suporte para musculatura"
+            ],
             "relacionados": [
                 {
                     "nome": "Camiseta Dry Fit",
@@ -458,49 +559,28 @@
             ]
         },
         {
-            "id": 18,
+            "id": 19,
             "nome": "Kit Calça e Camisa Térmica de Treino",
             "descricao": "Aquecimento muscular e compressão para melhor performance.",
             "preco": "R$ 120,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/kit.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 68,
+            "avaliacoes": 49,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Manutenção da temperatura corporal",
+                "Compressão muscular eficiente",
+                "Conforto durante o treino",
+                "Material respirável"
+            ],
             "relacionados": [
                 {
                     "nome": "Regata Powerlift",
                     "preco": 79.90,
                     "link": "detalhes.html?id=19"
-                },
-                {
-                    "nome": "Jaqueta Corta-Vento",
-                    "preco": 129.90,
-                    "link": "detalhes.html?id=20"
-                }
-            ]
-        },
-        {
-            "id": 19,
-            "nome": "Regata Powerlift",
-            "descricao": "Tecido ultra resistente com costuras reforçadas para levantamentos pesados.",
-            "preco": "R$ 79,90",
-            "preco_original": null,
-            "categoria": "Moda Fitness",
-            "imagem": "/Produtos/assets/regata.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
-            "frete_gratis": null,
-            "beneficios": null,
-            "relacionados": [
-                {
-                    "nome": "Kit Calça e Camisa Térmica de Treino",
-                    "preco": 120.90,
-                    "link": "detalhes.html?id=18"
                 },
                 {
                     "nome": "Jaqueta Corta-Vento",
@@ -511,17 +591,53 @@
         },
         {
             "id": 20,
+            "nome": "Regata Powerlift",
+            "descricao": "Tecido ultra resistente com costuras reforçadas para levantamentos pesados.",
+            "preco": "R$ 79,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/regata.png",
+            "vendidos": 92,
+            "avaliacoes": 74,
+            "avaliacao": 4.5,
+            "frete_gratis": null,
+            "beneficios": [
+                "Costuras reforçadas para maior durabilidade",
+                "Liberdade de movimento",
+                "Tecido resistente e confortável",
+                "Design ergonômico"
+            ],
+            "relacionados": [
+                {
+                    "nome": "Kit Calça e Camisa Térmica de Treino",
+                    "preco": 120.90,
+                    "link": "detalhes.html?id=18"
+                },
+                {
+                    "nome": "Jaqueta Corta-Vento",
+                    "preco": 129.90,
+                    "link": "detalhes.html?id=20"
+                }
+            ]
+        },
+        {
+            "id": 21,
             "nome": "Jaqueta Corta-Vento",
             "descricao": "Proteção contra vento e frio para treinos ao ar livre.",
             "preco": "R$ 129,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/jaqueta.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 57,
+            "avaliacoes": 41,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Proteção contra vento e frio",
+                "Material respirável",
+                "Bolsos funcionais",
+                "Design esportivo"
+            ],
             "relacionados": [
                 {
                     "nome": "Regata Powerlift",
@@ -536,18 +652,23 @@
             ]
         },
         {
-            "id": 21,
+            "id": 22,
             "nome": "Meia Esportiva",
             "descricao": "Conforto e absorção de impacto durante os treinos.",
             "preco": "R$ 20,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/meia.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
-            "frete_gratis": null,
-            "beneficios": null,
+            "vendidos": 310,
+            "avaliacoes": 245,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Absorção de impacto",
+                "Proteção contra bolhas",
+                "Tecido respirável",
+                "Conforto durante longos treinos"
+            ],
             "relacionados": [
                 {
                     "nome": "Boné Esportivo",
@@ -562,18 +683,23 @@
             ]
         },
         {
-            "id": 22,
+            "id": 23,
             "nome": "Boné Esportivo",
             "descricao": "Proteção contra o sol durante atividades ao ar livre.",
             "preco": "R$ 49,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/bone.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 125,
+            "avaliacoes": 98,
+            "avaliacao": 4.5,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Proteção solar eficiente",
+                "Ajuste confortável",
+                "Material respirável",
+                "Design moderno"
+            ],
             "relacionados": [
                 {
                     "nome": "Meia Esportiva",
@@ -588,18 +714,23 @@
             ]
         },
         {
-            "id": 23,
+            "id": 24,
             "nome": "Mochila Esportiva",
             "descricao": "Prática para corridas e atividades ao ar livre.",
             "preco": "R$ 159,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
             "imagem": "/Produtos/assets/mochila.png",
-            "vendidos": null,
-            "avaliacoes": null,
-            "avaliacao": null,
+            "vendidos": 48,
+            "avaliacoes": 36,
+            "avaliacao": 4,
             "frete_gratis": null,
-            "beneficios": null,
+            "beneficios": [
+                "Compartimentos organizados",
+                "Conforto no transporte",
+                "Material resistente à água",
+                "Alça ajustável"
+            ],
             "relacionados": [
                 {
                     "nome": "Corda - Acessório para Treino Funcional",

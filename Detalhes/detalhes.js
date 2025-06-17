@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Adiciona benefícios
                 const beneficiosContainer = document.getElementById('produto-beneficios');
-                beneficiosContainer.innerHTML = ''; 
+                beneficiosContainer.innerHTML = '';
 
                 if (produto.beneficios && produto.beneficios.length > 0) {
                     produto.beneficios.forEach(beneficio => {
@@ -101,41 +101,41 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.produtos-relacionados').style.display = 'none';
         });
 
-        function loadRelatedProducts(relatedProducts, allProducts) {
-            const container = document.getElementById('produtos-relacionados');
-            container.innerHTML = '';
-        
-            if (!relatedProducts || relatedProducts.length === 0) {
-                document.querySelector('.produtos-relacionados').style.display = 'none';
-                return;
-            } else {
-                document.querySelector('.produtos-relacionados').style.display = 'block';
-            }
-        
-            const relacionadosContainer = document.createElement('div');
-            relacionadosContainer.className = 'relacionados-container';
-        
-            relatedProducts.forEach(related => {
-                const fullProduct = allProducts.find(p => p.nome === related.nome);
-        
-                if (fullProduct) {
-                    const href = `detalhes.html?id=${fullProduct.id}`;
-                    const productCard = document.createElement('div');
-                    productCard.className = 'produto-card';
-                    productCard.innerHTML = `
+    function loadRelatedProducts(relatedProducts, allProducts) {
+        const container = document.getElementById('produtos-relacionados');
+        container.innerHTML = '';
+
+        if (!relatedProducts || relatedProducts.length === 0) {
+            document.querySelector('.produtos-relacionados').style.display = 'none';
+            return;
+        } else {
+            document.querySelector('.produtos-relacionados').style.display = 'block';
+        }
+
+        const relacionadosContainer = document.createElement('div');
+        relacionadosContainer.className = 'relacionados-container';
+
+        relatedProducts.forEach(related => {
+            const fullProduct = allProducts.find(p => p.nome === related.nome);
+
+            if (fullProduct) {
+                const href = `detalhes.html?id=${fullProduct.id}`;
+                const productCard = document.createElement('div');
+                productCard.className = 'produto-card';
+                productCard.innerHTML = `
                         <a href="${href}">
                             <img src="${fullProduct.imagem}" alt="${fullProduct.nome}">
                             <h3>${fullProduct.nome}</h3>
                             <p class="preco">${fullProduct.preco}</p>
                         </a>
                     `;
-                    relacionadosContainer.appendChild(productCard);
-                }
-            });
-        
-            container.appendChild(relacionadosContainer);
-        }
-        
+                relacionadosContainer.appendChild(productCard);
+            }
+        });
+
+        container.appendChild(relacionadosContainer);
+    }
+
 
     // Controle de quantidade 
     const menosBtn = document.querySelector('.menos');

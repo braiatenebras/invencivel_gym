@@ -1,0 +1,660 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Creatina",
+            "descricao": "Suplemento para aumento de força e desempenho em treinos intensos.",
+            "preco": "R$ 40,90",
+            "preco_original": 99.90,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/creatina.png",
+            "vendidos": 89,
+            "avaliacoes": 42,
+            "avaliacao": 5,
+            "frete_gratis": null,
+            "beneficios": [
+                "Aumento de força e resistência",
+                "Melhora no desempenho atlético",
+                "Acelera a recuperação muscular",
+                "Produto 100% puro"
+            ],
+            "relacionados": [
+                {
+                    "nome": "Whey Protein",
+                    "preco": 120.50,
+                    "link": "detalhes.html?id=2"
+                },
+                {
+                    "nome": "Pré-Treino",
+                    "preco": 110.00,
+                    "link": "detalhes.html?id=5"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Whey Protein",
+            "descricao": "Suplemento de proteína de soro de leite para auxiliar no ganho de massa muscular.",
+            "preco": "R$ 120,50",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/whey.png",
+            "vendidos": 770,
+            "avaliacoes": 468,
+            "avaliacao": 4.5,
+            "frete_gratis": null,
+            "beneficios": [
+                "Aumento de força e resistência",
+                "Melhora no desempenho atlético",
+                "Acelera a recuperação muscular",
+                "Produto 100% puro"
+            ],
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Pré-Treino",
+                    "preco": 110.00,
+                    "link": "detalhes.html?id=5"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Hipercalórico",
+            "descricao": "Suplemento para ganho de peso e massa muscular.",
+            "preco": "R$ 105,90",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/hipercalorico.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Whey Protein",
+                    "preco": 120.50,
+                    "link": "detalhes.html?id=2"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "BCAA - 300g",
+            "descricao": "Aminoácidos essenciais para auxiliar na recuperação muscular pós-treino.",
+            "preco": "R$ 25,90",
+            "preco_original": 50.00,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/bcaa.png",
+            "vendidos": 40,
+            "avaliacoes": 12,
+            "avaliacao": 5,
+            "frete_gratis": true,
+            "beneficios": [
+                "Auxilia na recuperação muscular",
+                "Reduz a fadiga durante os treinos",
+                "Preserva a massa muscular",
+                "Melhora o desempenho atlético"
+            ],
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Pré-Treino",
+                    "preco": 110.00,
+                    "link": "detalhes.html?id=5"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nome": "Pré-Treino",
+            "descricao": "Suplemento para aumentar a energia e o foco durante os treinos.",
+            "preco": "R$ 110,00",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/pre-treino.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Whey Protein",
+                    "preco": 120.50,
+                    "link": "detalhes.html?id=2"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "Glutamina",
+            "descricao": "Suplemento para recuperação muscular e suporte ao sistema imunológico.",
+            "preco": "R$ 50,90",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/glutamina.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "BCAA - 300g",
+                    "preco": 25.90,
+                    "link": "detalhes.html?id=4"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "nome": "Multivitamínico",
+            "descricao": "Suplemento para suporte ao sistema imunológico e saúde geral.",
+            "preco": "R$ 55,90",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/multivitaminico.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Glutamina",
+                    "preco": 50.90,
+                    "link": "detalhes.html?id=6"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "nome": "Termogênico",
+            "descricao": "Suplemento para aumento de energia e queima de gordura.",
+            "preco": "R$ 50,90",
+            "preco_original": null,
+            "categoria": "Suplementos",
+            "imagem": "/Produtos/assets/termogenico.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Creatina",
+                    "preco": 40.90,
+                    "link": "detalhes.html?id=1"
+                },
+                {
+                    "nome": "Whey Protein",
+                    "preco": 120.50,
+                    "link": "detalhes.html?id=2"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "nome": "Strap",
+            "descricao": "Acessório para suporte durante os treinos.",
+            "preco": "R$ 25,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/strap.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Luva de Treino",
+                    "preco": 49.90,
+                    "link": "detalhes.html?id=10"
+                },
+                {
+                    "nome": "Cinto de Levantamento",
+                    "preco": 89.90,
+                    "link": "detalhes.html?id=11"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "nome": "Luva de Treino",
+            "descricao": "Proteção para as mãos durante exercícios com pesos.",
+            "preco": "R$ 49,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/luva-treino.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Strap",
+                    "preco": 25.90,
+                    "link": "detalhes.html?id=9"
+                },
+                {
+                    "nome": "Cinto de Levantamento",
+                    "preco": 89.90,
+                    "link": "detalhes.html?id=11"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "nome": "Cinto de Levantamento",
+            "descricao": "Suporte para lombar em exercícios pesados.",
+            "preco": "R$ 89,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/cinto-levantamento.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Luva de Treino",
+                    "preco": 49.90,
+                    "link": "detalhes.html?id=10"
+                },
+                {
+                    "nome": "Strap",
+                    "preco": 25.90,
+                    "link": "detalhes.html?id=9"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "nome": "Faixa Elástica",
+            "descricao": "Para exercícios resistidos e mobilidade.",
+            "preco": "R$ 15,99",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/faixa-elastica.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Coqueteleira - 600 ML",
+                    "preco": 11.90,
+                    "link": "detalhes.html?id=13"
+                },
+                {
+                    "nome": "Corda - Acessório para Treino Funcional",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=14"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "nome": "Coqueteleira - 600 ML",
+            "descricao": "A Coqueteleira da Invencível Gym é o acessório perfeito para misturar seus suplementos de forma rápida e eficiente.",
+            "preco": "R$ 11,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/coqueteleira.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Faixa Elástica",
+                    "preco": 15.99,
+                    "link": "detalhes.html?id=12"
+                },
+                {
+                    "nome": "Corda - Acessório para Treino Funcional",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=14"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "nome": "Corda - Acessório para Treino Funcional",
+            "descricao": "A Corda da Invencível Gym é o acessório ideal para quem busca um treino funcional completo.",
+            "preco": "R$ 79,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/corda-naval.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Coqueteleira - 600 ML",
+                    "preco": 11.90,
+                    "link": "detalhes.html?id=13"
+                },
+                {
+                    "nome": "Faixa Elástica",
+                    "preco": 15.99,
+                    "link": "detalhes.html?id=12"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "nome": "Knee Sleeve",
+            "descricao": "Proteção e suporte para os joelhos durante agachamentos.",
+            "preco": "R$ 69,90",
+            "preco_original": null,
+            "categoria": "Acessórios",
+            "imagem": "/Produtos/assets/knee-sleeve.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Camiseta Dry Fit",
+                    "preco": 59.90,
+                    "link": "detalhes.html?id=16"
+                },
+                {
+                    "nome": "Short de Compressão",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=17"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "nome": "Camiseta Dry Fit",
+            "descricao": "Tecido tecnológico que absorve o suor durante os treinos.",
+            "preco": "R$ 59,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/dryfit.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Knee Sleeve",
+                    "preco": 69.90,
+                    "link": "detalhes.html?id=15"
+                },
+                {
+                    "nome": "Short de Compressão",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=17"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "nome": "Short de Compressão",
+            "descricao": "Melhora a circulação e oferece suporte muscular.",
+            "preco": "R$ 79,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/shorts.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Camiseta Dry Fit",
+                    "preco": 59.90,
+                    "link": "detalhes.html?id=16"
+                },
+                {
+                    "nome": "Knee Sleeve",
+                    "preco": 69.90,
+                    "link": "detalhes.html?id=15"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "nome": "Kit Calça e Camisa Térmica de Treino",
+            "descricao": "Aquecimento muscular e compressão para melhor performance.",
+            "preco": "R$ 120,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/kit.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Regata Powerlift",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=19"
+                },
+                {
+                    "nome": "Jaqueta Corta-Vento",
+                    "preco": 129.90,
+                    "link": "detalhes.html?id=20"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "nome": "Regata Powerlift",
+            "descricao": "Tecido ultra resistente com costuras reforçadas para levantamentos pesados.",
+            "preco": "R$ 79,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/regata.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Kit Calça e Camisa Térmica de Treino",
+                    "preco": 120.90,
+                    "link": "detalhes.html?id=18"
+                },
+                {
+                    "nome": "Jaqueta Corta-Vento",
+                    "preco": 129.90,
+                    "link": "detalhes.html?id=20"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "nome": "Jaqueta Corta-Vento",
+            "descricao": "Proteção contra vento e frio para treinos ao ar livre.",
+            "preco": "R$ 129,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/jaqueta.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Regata Powerlift",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=19"
+                },
+                {
+                    "nome": "Kit Calça e Camisa Térmica de Treino",
+                    "preco": 120.90,
+                    "link": "detalhes.html?id=18"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "nome": "Meia Esportiva",
+            "descricao": "Conforto e absorção de impacto durante os treinos.",
+            "preco": "R$ 20,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/meia.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Boné Esportivo",
+                    "preco": 49.90,
+                    "link": "detalhes.html?id=22"
+                },
+                {
+                    "nome": "Camiseta Dry Fit",
+                    "preco": 59.90,
+                    "link": "detalhes.html?id=16"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "nome": "Boné Esportivo",
+            "descricao": "Proteção contra o sol durante atividades ao ar livre.",
+            "preco": "R$ 49,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/bone.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Meia Esportiva",
+                    "preco": 20.90,
+                    "link": "detalhes.html?id=21"
+                },
+                {
+                    "nome": "Jaqueta Corta-Vento",
+                    "preco": 129.90,
+                    "link": "detalhes.html?id=20"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "nome": "Mochila Esportiva",
+            "descricao": "Prática para corridas e atividades ao ar livre.",
+            "preco": "R$ 159,90",
+            "preco_original": null,
+            "categoria": "Moda Fitness",
+            "imagem": "/Produtos/assets/mochila.png",
+            "vendidos": null,
+            "avaliacoes": null,
+            "avaliacao": null,
+            "frete_gratis": null,
+            "beneficios": null,
+            "relacionados": [
+                {
+                    "nome": "Corda - Acessório para Treino Funcional",
+                    "preco": 79.90,
+                    "link": "detalhes.html?id=14"
+                },
+                {
+                    "nome": "Coqueteleira - 600 ML",
+                    "preco": 11.90,
+                    "link": "detalhes.html?id=13"
+                }
+            ]
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Suplementos",
+            "produtos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Acessórios",
+            "produtos": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Moda Fitness",
+            "produtos": [
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ]
+        }
+    ]
+}

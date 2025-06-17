@@ -456,6 +456,12 @@ header {
     width: 250px;
     text-align: center;
     transition: transform 0.3s ease;
+    text-decoration: none;
+
+}
+
+.produto-card a {
+    text-decoration: none;
 }
 
 .produto-card:hover {

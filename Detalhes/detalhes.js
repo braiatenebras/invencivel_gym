@@ -32,6 +32,111 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Carregar detalhes do produto e produtos relacionados
+    const urlParams = new URLSearchParams(window.location.search);
+    const produtoId = urlParams.get('id');
+
+    fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            const produto = data.produtos.find(p => p.id == produtoId);
+            if (produto) {
+                // Carrega informações do produto principal
+                document.getElementById('produto-nome').textContent = produto.nome;
+                document.getElementById('produto-imagem').src = produto.imagem;
+                document.getElementById('produto-descricao').textContent = produto.descricao;
+                document.getElementById('produto-preco').textContent = produto.preco;
+
+                if (produto.vendidos) {
+                    document.getElementById('produto-vendidos').textContent = `${produto.vendidos} Vendidos`;
+                } else {
+                    document.getElementById('produto-vendidos').textContent = '';
+                }
+
+                if (produto.avaliacoes) {
+                    document.getElementById('produto-avaliacoes').textContent = `(${produto.avaliacoes} avaliações)`;
+                } else {
+                    document.getElementById('produto-avaliacoes').textContent = '';
+                }
+
+                // Adiciona estrelas de avaliação
+                const estrelasContainer = document.getElementById('produto-avaliacao');
+                estrelasContainer.innerHTML = ''; // Limpa estrelas existentes
+
+                if (produto.avaliacao) {
+                    for (let i = 0; i < Math.floor(produto.avaliacao); i++) {
+                        estrelasContainer.innerHTML += '<i class="fas fa-star"></i>';
+                    }
+                    if (produto.avaliacao % 1 !== 0) {
+                        estrelasContainer.innerHTML += '<i class="fas fa-star-half-alt"></i>';
+                    }
+                }
+
+                // Adiciona benefícios
+                const beneficiosContainer = document.getElementById('produto-beneficios');
+                beneficiosContainer.innerHTML = ''; 
+
+                if (produto.beneficios && produto.beneficios.length > 0) {
+                    produto.beneficios.forEach(beneficio => {
+                        const li = document.createElement('li');
+                        li.textContent = beneficio;
+                        beneficiosContainer.appendChild(li);
+                    });
+                }
+
+                // Carrega produtos relacionados
+                if (produto.relacionados && produto.relacionados.length > 0) {
+                    loadRelatedProducts(produto.relacionados, data.produtos);
+                    document.querySelector('.produtos-relacionados').style.display = 'block'; // garante visibilidade
+                } else {
+                    document.querySelector('.produtos-relacionados').style.display = 'none';
+                }
+            } else {
+                document.getElementById('produto-nome').textContent = 'Produto não encontrado';
+                document.querySelector('.produtos-relacionados').style.display = 'none';
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao carregar os detalhes do produto:', error);
+            document.querySelector('.produtos-relacionados').style.display = 'none';
+        });
+
+        function loadRelatedProducts(relatedProducts, allProducts) {
+            const container = document.getElementById('produtos-relacionados');
+            container.innerHTML = '';
+        
+            if (!relatedProducts || relatedProducts.length === 0) {
+                document.querySelector('.produtos-relacionados').style.display = 'none';
+                return;
+            } else {
+                document.querySelector('.produtos-relacionados').style.display = 'block';
+            }
+        
+            const relacionadosContainer = document.createElement('div');
+            relacionadosContainer.className = 'relacionados-container';
+        
+            relatedProducts.forEach(related => {
+                const fullProduct = allProducts.find(p => p.nome === related.nome);
+        
+                if (fullProduct) {
+                    const href = `detalhes.html?id=${fullProduct.id}`;
+                    const productCard = document.createElement('div');
+                    productCard.className = 'produto-card';
+                    productCard.innerHTML = `
+                        <a href="${href}">
+                            <img src="${fullProduct.imagem}" alt="${fullProduct.nome}">
+                            <h3>${fullProduct.nome}</h3>
+                            <p class="preco">${fullProduct.preco}</p>
+                        </a>
+                    `;
+                    relacionadosContainer.appendChild(productCard);
+                }
+            });
+        
+            container.appendChild(relacionadosContainer);
+        }
+        
+
     // Controle de quantidade 
     const menosBtn = document.querySelector('.menos');
     const maisBtn = document.querySelector('.mais');
@@ -71,19 +176,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adicionar ao carrinho
     if (addToCartBtn) {
         addToCartBtn.addEventListener('click', function () {
+            const productName = document.getElementById('produto-nome').textContent;
+            const precoText = document.getElementById('produto-preco').textContent.replace('R$ ', '').replace('.', '').replace(',', '.').trim();
+            const productPrice = parseFloat(precoText);
+            const productImage = document.getElementById('produto-imagem').src;
+
             const product = {
-                id: window.location.pathname, //
-                name: document.querySelector('h1')?.textContent || 'Termogênico',
-                price: parseFloat(document.querySelector('.preco')?.textContent.replace('R$ ', '').replace(',', '.')) || 50.90,
-                image: document.querySelector('.imagem-produto img')?.src || '/Produtos/assets/termogenico.png',
-                quantity: parseInt(quantidadeInput?.value) || 1
+                id: produtoId,
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: parseInt(quantidadeInput.value)
             };
 
             addToCart(product);
         });
     }
 
-    // Função para adicionar ao carrinho
     function addToCart(product) {
         const existingItem = cart.find(item => item.id === product.id);
 
@@ -97,7 +206,6 @@ document.addEventListener('DOMContentLoaded', function () {
         showAddedToCartMessage(product.name);
     }
 
-    // Mostrar mensagem de produto adicionado
     function showAddedToCartMessage(productName) {
         const message = document.createElement('div');
         message.className = 'cart-message';
@@ -116,35 +224,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000);
     }
 
-    // Inicializar contador do carrinho
     updateCartCounter();
-
-    // Estilo para mensagem de produto adicionado
-    const style = document.createElement('style');
-    style.textContent = `
-        .cart-message {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #FFD700;
-            color: #111;
-            padding: 12px 24px;
-            border-radius: 4px;
-            font-weight: bold;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 3000;
-        }
-        
-        .cart-message.show {
-            opacity: 1;
-        }
-        
-        .blue-theme .cart-message {
-            background-color: #2196F3;
-            color: white;
-        }
-    `;
-    document.head.appendChild(style);
 });
+

@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Creatina Monohidratada - Suplemento para aumento de força e desempenho nos treinos">
     <link rel="icon" href="../assets/Omniman_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/Detalhes/detalhes.css">
-    <title> BCAA - Invencível Gym</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho - Invencível Gym</title>
 </head>
 
 <body class="blue-theme">
@@ -38,15 +36,61 @@
         </nav>
     </header>
 
+    <main>
+        <h1>Carrinho de Compras</h1>
+        <table id="carrinho">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-items">
+                <!-- Itens do carrinho serão inseridos aqui -->
+            </tbody>
+        </table>
+        <div id="total-container">
+            <h2>Total: R$ <span id="total-preco">0.00</span></h2>
+        </div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </main>
 
-
-    <div class="direitos">
-        <p>&copy; 2025 Invencível Gym. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Bryan K. e Gabriel A.</p>
-    </div>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna">
+                <img src="/assets/logoamarelo.png" alt="logo do invencível">
+                <p>Transformando vidas com disciplina e força desde 2020.</p>
+            </div>
+            <div class="coluna">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="/Produtos/loja.html">Loja</a></li>
+                    <li><a href="/Formulário de Cadastro/form.html">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h4>Siga-nos</h4>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/eobraiak" target="_blank">Instagram Bryan</a>
+                    <a href="https://www.instagram.com/biel_.antunes" target="_blank">Instagram Gabriel</a>
+                </div>
+            </div>
+        </div>
+        <div class="direitos">
+            <h3>&copy; 2025 Invencível Gym. Todos os direitos reservados.</h3>
+            <p>Desenvolvido por Bryan K. e Gabriel A.</p>
+        </div>
     </footer>
 
-    <script src="../detalhes.js"></script>
+    <script src="carrinho.js"></script>
+    <script src="Detalhes/detalhes.js"></script>
 </body>
 
 </html>

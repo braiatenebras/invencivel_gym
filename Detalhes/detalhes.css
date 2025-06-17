@@ -596,6 +596,16 @@ header {
     color: #aaa;
 }
 
+.direitos p {
+    margin-bottom: 10px;
+}
+
+.direitos h3 {
+    font-size: 13.6px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
 
 /* Responsivo */
 @media screen and (max-width: 768px) {

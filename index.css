@@ -627,6 +627,8 @@ nav {
     color: #fff;
     padding: 40px 20px 10px;
     font-size: 0.95rem;
+    width: 100%;
+    border-top: 1px solid #333;
 }
 
 .container-rodape {
@@ -688,6 +690,16 @@ nav {
     padding-top: 15px;
     font-size: 0.85rem;
     color: #aaa;
+}
+
+.direitos p {
+    margin-bottom: 10px;
+}
+
+.direitos h3 {
+    font-size: 13.6px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 

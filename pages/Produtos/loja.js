@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateLogo(theme) {
         if (theme === 'blue') {
-            logo.src = "../assets/logoazul.png";
+            logo.src = "/../assets/logoazul.png";
         } else {
-            logo.src = "../assets/logoamarelo.png";
+            logo.src = "/../assets/logoamarelo.png";
         }
     }
 

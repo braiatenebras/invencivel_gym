@@ -1,7 +1,7 @@
 // Funções auxiliares
 function redirectToLogin() {
     // Adiciona timestamp para evitar cache
-    window.location.href = "Formulário de Cadastro/form.html?t=" + Date.now();
+    window.location.href = "pages/Formulário de Cadastro/form.html?t=" + Date.now();
 }
 
 function confirmLogout() {

@@ -11,7 +11,7 @@ const logar = () => {
     firebase.auth().signInWithEmailAndPassword(email, senha)
         .then(() => {
             alert('Login realizado com sucesso!');
-            setTimeout(() => location.href = "../index.html", 300);
+            setTimeout(() => location.href = "/../index.html", 300);
         })
         .catch((error) => {
             console.error(error);

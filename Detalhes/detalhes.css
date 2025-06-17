@@ -69,6 +69,11 @@ body {
     color: rgba(21, 119, 211, 0.884);
 }
 
+.blue-theme .cart-message {
+    background-color: #155ab8;
+    color: white;
+}
+
 .blue-theme .menu li a:hover {
     color: white;
 }
@@ -258,6 +263,27 @@ header {
     justify-content: center;
     font-weight: bold;
 }
+
+/* Alerta do carrinho */
+.cart-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.cart-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 /* Detalhes do Produto */

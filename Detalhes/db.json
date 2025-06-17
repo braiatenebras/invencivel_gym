@@ -3,7 +3,7 @@
         {
             "id": 1,
             "nome": "Creatina",
-            "descricao": "Suplemento para aumento de força e desempenho em treinos intensos.",
+            "descricao": "Creatina Monohidratada 300g com pureza superior a 99%, fornece energia imediata para células musculares, aumentando força e resistência durante treinos intensos. Forma micronizada para melhor absorção, sem aditivos artificiais.",
             "preco": "R$ 40,90",
             "preco_original": 99.90,
             "categoria": "Suplementos",
@@ -11,7 +11,6 @@
             "vendidos": 89,
             "avaliacoes": 42,
             "avaliacao": 5,
-            "frete_gratis": null,
             "beneficios": [
                 "Aumento de força e resistência",
                 "Melhora no desempenho atlético",
@@ -34,7 +33,7 @@
         {
             "id": 2,
             "nome": "Whey Protein",
-            "descricao": "Suplemento de proteína de soro de leite para auxiliar no ganho de massa muscular.",
+            "descricao": "Whey Protein Concentrado 900g com 24g de proteína por dose, contendo BCAA essenciais para reconstrução muscular. Processado a baixa temperatura para preservar nutrientes, disponível em vários sabores.",
             "preco": "R$ 120,50",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -42,7 +41,6 @@
             "vendidos": 770,
             "avaliacoes": 468,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Fonte de proteína de alta qualidade",
                 "Auxilia no ganho de massa muscular",
@@ -65,7 +63,7 @@
         {
             "id": 3,
             "nome": "Hipercalórico",
-            "descricao": "Suplemento para ganho de peso e massa muscular.",
+            "descricao": "Hipercalórico completo com 650kcal por porção, combina carboidratos complexos e proteínas de alta qualidade para auxiliar no ganho de peso saudável e massa muscular.",
             "preco": "R$ 105,90",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -73,7 +71,6 @@
             "vendidos": 35,
             "avaliacoes": 28,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor calórico para ganho de peso",
                 "Combinação de carboidratos e proteínas",
@@ -96,7 +93,7 @@
         {
             "id": 4,
             "nome": "BCAA - 300g",
-            "descricao": "Aminoácidos essenciais para auxiliar na recuperação muscular pós-treino.",
+            "descricao": "BCAA 2:1:1 em pó 300g, com adição de vitamina B6 para melhor absorção. Reduz fadiga muscular e acelera recuperação pós-treino, essencial para atletas de alta intensidade.",
             "preco": "R$ 25,90",
             "preco_original": 50.00,
             "categoria": "Suplementos",
@@ -104,7 +101,6 @@
             "vendidos": 40,
             "avaliacoes": 12,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Auxilia na recuperação muscular",
                 "Reduz a fadiga durante os treinos",
@@ -127,7 +123,7 @@
         {
             "id": 5,
             "nome": "Pré-Treino",
-            "descricao": "Suplemento para aumentar a energia e o foco durante os treinos.",
+            "descricao": "Pré-Treino estimulante com cafeína 200mg, beta-alanina e citrulina malato. Aumenta energia, foco e resistência vascular para treinos mais intensos e duradouros.",
             "preco": "R$ 110,00",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -135,7 +131,6 @@
             "vendidos": 210,
             "avaliacoes": 156,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Aumenta a energia para treinos intensos",
                 "Melhora o foco e concentração",
@@ -158,7 +153,7 @@
         {
             "id": 6,
             "nome": "Glutamina",
-            "descricao": "Suplemento para recuperação muscular e suporte ao sistema imunológico.",
+            "descricao": "Glutamina em pó 200g, aminoácido essencial para recuperação muscular e imunidade. Ajuda na hidratação celular e reduz dores musculares pós-treino.",
             "preco": "R$ 50,90",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -166,7 +161,6 @@
             "vendidos": 75,
             "avaliacoes": 42,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Recuperação muscular acelerada",
                 "Fortalecimento do sistema imunológico",
@@ -189,7 +183,7 @@
         {
             "id": 7,
             "nome": "Multivitamínico",
-            "descricao": "Suplemento para suporte ao sistema imunológico e saúde geral.",
+            "descricao": "Multivitamínico completo com 23 vitaminas e minerais essenciais, fortalece imunidade e auxilia no metabolismo energético. Fórmula especialmente desenvolvida para atletas.",
             "preco": "R$ 55,90",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -197,7 +191,6 @@
             "vendidos": 320,
             "avaliacoes": 245,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Fornece vitaminas e minerais essenciais",
                 "Apoia o sistema imunológico",
@@ -220,7 +213,7 @@
         {
             "id": 8,
             "nome": "Termogênico",
-            "descricao": "Suplemento para aumento de energia e queima de gordura.",
+            "descricao": "Termogênico premium com extrato de chá verde, cafeína e gengibre. Acelera metabolismo e auxilia na queima de gordura, proporcionando energia limpa para os treinos.",
             "preco": "R$ 50,90",
             "preco_original": null,
             "categoria": "Suplementos",
@@ -228,7 +221,6 @@
             "vendidos": 180,
             "avaliacoes": 132,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Acelera o metabolismo",
                 "Aumenta a queima de gordura",
@@ -251,7 +243,7 @@
         {
             "id": 9,
             "nome": "Strap",
-            "descricao": "Acessório para suporte durante os treinos.",
+            "descricao": "Strap de levantamento em neoprene de alta resistência, proporciona segurança e firmeza em exercícios de puxada. Alivia pressão nas articulações do punho.",
             "preco": "R$ 25,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -259,7 +251,6 @@
             "vendidos": 65,
             "avaliacoes": 38,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Aumenta a aderência em exercícios de puxada",
                 "Protege as mãos de calos e lesões",
@@ -282,7 +273,7 @@
         {
             "id": 10,
             "nome": "Luva de Treino",
-            "descricao": "Proteção para as mãos durante exercícios com pesos.",
+            "descricao": "Luvas de treino com palmilha em gel, protegem as mãos de calos e melhoram aderência. Material respirável e antiderrapante para maior conforto.",
             "preco": "R$ 49,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -290,7 +281,6 @@
             "vendidos": 120,
             "avaliacoes": 87,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Proteção contra calos e bolhas",
                 "Melhor aderência durante os exercícios",
@@ -313,7 +303,7 @@
         {
             "id": 11,
             "nome": "Cinto de Levantamento",
-            "descricao": "Suporte para lombar em exercícios pesados.",
+            "descricao": "Cinto de levantamento de peso em couro genuíno 10cm, suporte lombar ajustável para exercícios pesados como agachamento e terra. Alça de velcro para melhor fixação.",
             "preco": "R$ 89,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -321,7 +311,6 @@
             "vendidos": 95,
             "avaliacoes": 72,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Proteção para a coluna lombar",
                 "Permite levantar cargas mais pesadas com segurança",
@@ -344,7 +333,7 @@
         {
             "id": 12,
             "nome": "Faixa Elástica",
-            "descricao": "Para exercícios resistidos e mobilidade.",
+            "descricao": "Kit faixas elásticas em 5 níveis de resistência (extra leve a extra pesado), ideal para treino funcional, mobilidade e reabilitação. Inclui bolsa de transporte.",
             "preco": "R$ 15,99",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -352,7 +341,6 @@
             "vendidos": 210,
             "avaliacoes": 156,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Versátil para diversos exercícios",
                 "Auxilia no ganho de mobilidade",
@@ -375,7 +363,7 @@
         {
             "id": 13,
             "nome": "Coqueteleira - 600 ML",
-            "descricao": "A Coqueteleira da Invencível Gym é o acessório perfeito para misturar seus suplementos de forma rápida e eficiente.",
+            "descricao": "Coqueteleira shaker 600ml com compartimento para suplementos, sistema de mistura turbo e tampa anti-vazamento. Livre de BPA e odor.",
             "preco": "R$ 11,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -383,7 +371,6 @@
             "vendidos": 430,
             "avaliacoes": 320,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Mistura suplementos de forma homogênea",
                 "Fácil de transportar e lavar",
@@ -406,7 +393,7 @@
         {
             "id": 14,
             "nome": "Corda - Acessório para Treino Funcional",
-            "descricao": "A Corda da Invencível Gym é o acessório ideal para quem busca um treino funcional completo.",
+            "descricao": "Corda naval profissional 4m, material resistente à água e suor. Ideal para treino funcional, melhora condicionamento cardiovascular e força de grip.",
             "preco": "R$ 79,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -414,7 +401,6 @@
             "vendidos": 85,
             "avaliacoes": 62,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Melhora a resistência e força muscular",
                 "Treino cardiovascular eficiente",
@@ -437,7 +423,7 @@
         {
             "id": 15,
             "nome": "Knee Sleeve",
-            "descricao": "Proteção e suporte para os joelhos durante agachamentos.",
+            "descricao": "Corda naval profissional 4m, material resistente à água e suor. Ideal para treino funcional, melhora condicionamento cardiovascular e força de grip.",
             "preco": "R$ 69,90",
             "preco_original": null,
             "categoria": "Acessórios",
@@ -445,7 +431,6 @@
             "vendidos": 110,
             "avaliacoes": 89,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Proteção para articulações dos joelhos",
                 "Suporte durante exercícios pesados",
@@ -468,7 +453,7 @@
         {
             "id": 16,
             "nome": "Bandagem de Punho",
-            "descricao": "Tecido tecnológico que absorve o suor durante os treinos.",
+            "descricao": "Bandagem de punho elástica 1,5m, suporte ajustável para levantamento de peso. Alivia pressão nas articulações sem limitar movimentos.",
             "preco": "R$ 45,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -476,7 +461,6 @@
             "vendidos": 75,
             "avaliacoes": 52,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Proteção para os punhos em exercícios pesados",
                 "Aumenta a estabilidade articular",
@@ -499,7 +483,7 @@
         {
             "id": 17,
             "nome": "Camiseta Dry Fit",
-            "descricao": "Tecido tecnológico que absorve o suor durante os treinos.",
+            "descricao": "Camiseta Dry Fit tecnologia moisture-wicking, tecido respirável que mantém o corpo seco durante treinos intensos. Costuras reforçadas para maior durabilidade.",
             "preco": "R$ 59,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -507,7 +491,6 @@
             "vendidos": 230,
             "avaliacoes": 187,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Tecido que absorve o suor rapidamente",
                 "Conforto e liberdade de movimento",
@@ -530,7 +513,7 @@
         {
             "id": 18,
             "nome": "Short de Compressão",
-            "descricao": "Melhora a circulação e oferece suporte muscular.",
+            "descricao": "Short de compressão com tecnologia anti-microbiana, melhora circulação sanguínea e reduz vibração muscular durante corridas e exercícios dinâmicos.",
             "preco": "R$ 79,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -538,7 +521,6 @@
             "vendidos": 145,
             "avaliacoes": 112,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Melhora a circulação sanguínea",
                 "Reduz a fadiga muscular",
@@ -561,7 +543,7 @@
         {
             "id": 19,
             "nome": "Kit Calça e Camisa Térmica de Treino",
-            "descricao": "Aquecimento muscular e compressão para melhor performance.",
+            "descricao": "Kit térmico (calça + camiseta) com tecnologia heatgear, mantém temperatura corporal ideal durante treinos em qualquer ambiente.",
             "preco": "R$ 120,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -569,7 +551,6 @@
             "vendidos": 68,
             "avaliacoes": 49,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Manutenção da temperatura corporal",
                 "Compressão muscular eficiente",
@@ -592,7 +573,7 @@
         {
             "id": 20,
             "nome": "Regata Powerlift",
-            "descricao": "Tecido ultra resistente com costuras reforçadas para levantamentos pesados.",
+            "descricao": "Regata powerlift em tecido stretch, design ergonômico para ampla liberdade de movimentos. Costuras planas evitam assaduras.",
             "preco": "R$ 79,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -600,7 +581,6 @@
             "vendidos": 92,
             "avaliacoes": 74,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Costuras reforçadas para maior durabilidade",
                 "Liberdade de movimento",
@@ -623,7 +603,7 @@
         {
             "id": 21,
             "nome": "Jaqueta Corta-Vento",
-            "descricao": "Proteção contra vento e frio para treinos ao ar livre.",
+            "descricao": "Jaqueta corta-vento ultraleve com proteção UV 50+, bolsos ziperados e capuz recolhível. Ideal para treinos ao ar livre em qualquer clima.",
             "preco": "R$ 129,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -631,7 +611,6 @@
             "vendidos": 57,
             "avaliacoes": 41,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Proteção contra vento e frio",
                 "Material respirável",
@@ -654,7 +633,7 @@
         {
             "id": 22,
             "nome": "Meia Esportiva",
-            "descricao": "Conforto e absorção de impacto durante os treinos.",
+            "descricao": "Meia esportiva com tecnologia de amortecimento nos pontos de impacto, malha respirável e proteção anti-odor. Canalto médio para melhor ajuste.",
             "preco": "R$ 20,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -662,7 +641,6 @@
             "vendidos": 310,
             "avaliacoes": 245,
             "avaliacao": 5,
-            "frete_gratis": true,
             "beneficios": [
                 "Absorção de impacto",
                 "Proteção contra bolhas",
@@ -685,7 +663,7 @@
         {
             "id": 23,
             "nome": "Boné Esportivo",
-            "descricao": "Proteção contra o sol durante atividades ao ar livre.",
+            "descricao": "Boné esportivo com aba curva e tecnologia dry-fit, proteção solar UPF 50+. Ajuste regulável na parte traseira para melhor encaixe.",
             "preco": "R$ 49,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -693,7 +671,6 @@
             "vendidos": 125,
             "avaliacoes": 98,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Proteção solar eficiente",
                 "Ajuste confortável",
@@ -716,7 +693,7 @@
         {
             "id": 24,
             "nome": "Mochila Esportiva",
-            "descricao": "Prática para corridas e atividades ao ar livre.",
+            "descricao": "Mochila hidratante 20L com bolso térmico, compartimento para notebook e sistema organizador. Alças acolchoadas para maior conforto.",
             "preco": "R$ 159,90",
             "preco_original": null,
             "categoria": "Moda Fitness",
@@ -724,7 +701,6 @@
             "vendidos": 48,
             "avaliacoes": 36,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Compartimentos organizados",
                 "Conforto no transporte",
@@ -747,7 +723,7 @@
         {
             "id": 25,
             "nome": "Barra de Proteína",
-            "descricao": "Barra proteica 60g com 15g de proteína, baixo teor de açúcar e alto teor de fibras.",
+            "descricao": "Barra proteica 60g com 20g de proteína, baixo teor de açúcar e alto conteúdo de fibras. Ingredientes naturais e sem glúten.",
             "preco": "R$ 9,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -755,7 +731,6 @@
             "vendidos": 250,
             "avaliacoes": 120,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor de proteína",
                 "Baixo teor de açúcar",
@@ -777,7 +752,7 @@
         {
             "id": 26,
             "nome": "Barra de Cereal",
-            "descricao": "Barra de cereal 30g integral com frutas secas, sem adição de açúcares refinados.",
+            "descricao": "Barra de cereal integral 40g com frutas vermelhas liofilizadas, adoçada com mel e sem conservantes artificiais. Fonte de energia rápida e saudável.",
             "preco": "R$ 4,50",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -785,7 +760,6 @@
             "vendidos": 100,
             "avaliacoes": 50,
             "avaliacao": 4,
-            "frete_gratis": null,
             "beneficios": [
                 "Integral",
                 "Sem açúcares refinados",
@@ -807,7 +781,7 @@
         {
             "id": 27,
             "nome": "Chips de Proteína",
-            "descricao": "Snack crocante 45g com 12g de proteína, baixo carboidrato e sabor lemon pepper.",
+            "descricao": "Chips proteico sabor barbecue, 15g de proteína por porção. Snack crocante com baixo carboidrato, ideal para dieta low carb.",
             "preco": "R$ 12,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -815,7 +789,6 @@
             "vendidos": 324,
             "avaliacoes": 120,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Baixo carboidrato",
                 "Alto teor de proteína",
@@ -837,7 +810,7 @@
         {
             "id": 28,
             "nome": "Biscoito Proteico",
-            "descricao": "Biscoito 60g com 17g de proteína, baixo teor de açúcar e alto teor de fibras.",
+            "descricao": "Biscoito proteico 60g com gotas de chocolate, 17g de proteína e 5g de fibras por porção. Zero lactose e baixo índice glicêmico.",
             "preco": "R$ 9,99",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -845,7 +818,6 @@
             "vendidos": 100,
             "avaliacoes": 50,
             "avaliacao": 3.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor de proteína",
                 "Baixo teor de açúcar",
@@ -867,7 +839,7 @@
         {
             "id": 29,
             "nome": "Gatorade",
-            "descricao": "Bebida isotônica 500ml que repõe eletrólitos e carboidratos durante exercícios.",
+            "descricao": "Gatorade 500ml isotônico com eletrólitos, repõe sais minerais perdidos no suor durante exercícios intensos. Disponível em vários sabores.",
             "preco": "R$ 6,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -875,7 +847,6 @@
             "vendidos": 450,
             "avaliacoes": 120,
             "avaliacao": 5,
-            "frete_gratis": null,
             "beneficios": [
                 "Repõe eletrólitos",
                 "Reforço de carboidratos",
@@ -898,7 +869,7 @@
         {
             "id": 30,
             "nome": "Monster Energy",
-            "descricao": "Energético 473ml com 160mg de cafeína, taurina e vitaminas do complexo B.",
+            "descricao": "Energético Monster Zero 473ml sem açúcar, com 160mg de cafeína, taurina e vitaminas B. Formulação especial para atletas.",
             "preco": "R$ 8,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -906,7 +877,6 @@
             "vendidos": 550,
             "avaliacoes": 298,
             "avaliacao": 5,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor de cafeína",
                 "Contém taurina",
@@ -928,7 +898,7 @@
         {
             "id": 31,
             "nome": "Red Bull",
-            "descricao": "Energético 473ml com 160mg de cafeína, taurina e vitaminas do complexo B.",
+            "descricao": "Red Bull Edition 250ml, bebida energética com cafeína, taurina e glucuronolactona. Versão premium em lata metálica.",
             "preco": "R$ 10,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -936,7 +906,6 @@
             "vendidos": 378,
             "avaliacoes": 159,
             "avaliacao": 4.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor de cafeína",
                 "Contém taurina",
@@ -958,7 +927,7 @@
         {
             "id": 32,
             "nome": "Yopro",
-            "descricao": "Bebida proteica 200ml com 15g de proteína, baixo teor de açúcar e sabor delicioso.",
+            "descricao": "Yopro 200ml bebida proteica sabor pêssego, 15g de proteína whey e apenas 90kcal. Praticidade para consumo pós-treino.",
             "preco": "R$ 6,90",
             "preco_original": null,
             "categoria": "Alimentos e Bebidas",
@@ -966,7 +935,6 @@
             "vendidos": 130,
             "avaliacoes": 89,
             "avaliacao": 3.5,
-            "frete_gratis": null,
             "beneficios": [
                 "Alto teor de proteína",
                 "Baixo teor de açúcar",

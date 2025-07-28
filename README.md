@@ -40,8 +40,7 @@ A **Invencível Gym** é uma academia virtual focada em alta performance, com eq
 
 ## 👨‍💻 Desenvolvedores
 - Bryan Kauan ([@eobraiak](https://www.instagram.com/eobraiak/))
-- Gabriel Antunes ([biel_.antunes](https://www.instagram.com/biel_.antunes/))
-
+- 
 ## 📜 Licença
 
 Este projeto está licenciado sob a **Licença MIT**.
